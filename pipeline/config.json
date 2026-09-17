@@ -1060,5 +1060,17 @@
   "cockpit": {
     "_comment": "Cockpit axes move with the market. r = (price/refPrice) x (refMed/medToday); upside = (1+iu)/r - 1; PEG = peg x r. refPrice is the price AJ himself published alongside iu and PEG (a 09:00 ET pre-market quote), not our close: pairing his readings with a different price pinned our Sep 8 dots to his picture regardless of how Sep 8 traded.",
     "refDate": "2026-09-08"
+  },
+  "cutovers": {
+    "_comment": "Switches pre-approved by the user, so the sanity gate lets them through unattended. One-shot: consumed when it applies. Bound to the figure the user actually saw (expect +/- tolerancePct) and still refused if the implied forward P/E lands outside 3-250, since that means broken units rather than a real revision.",
+    "preapproved": {
+      "MU": {
+        "approvedAt": "2026-09-18",
+        "by": "user",
+        "note": "Accept consensus when MU reports (~Sep 30). AJ 90 vs consensus ~150; recent actuals 3.03 -> 4.78 -> 12.20 -> 25.11 back consensus.",
+        "expect": 150,
+        "tolerancePct": 40
+      }
+    }
   }
 }

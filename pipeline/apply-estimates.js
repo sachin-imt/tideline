@@ -54,6 +54,10 @@ if (!existsSync(estPath)) {
 const config = JSON.parse(readFileSync(configPath, 'utf8'));
 const estFile = JSON.parse(readFileSync(estPath, 'utf8'));
 const est = estFile.estimates;
+// Standing approvals recorded in config, so a switch the user has already agreed
+// to goes through unattended instead of waiting in a brief they may not read for
+// days. One-shot: consumed below once it applies.
+const PREAPPROVED = config.cutovers?.preapproved || {};
 const r4 = n => Math.round(n * 10000) / 10000;
 
 // Latest close, for the implied-P/E sanity check. Falls back to the rolling
@@ -128,11 +132,23 @@ for (const stock of config.stocks) {
   if (impliedPe != null && (impliedPe < PE_SANE[0] || impliedPe > PE_SANE[1]))
     reasons.push(`implied fwd P/E ${impliedPe.toFixed(1)} outside ${PE_SANE[0]}-${PE_SANE[1]} — check units`);
 
-  if (reasons.length && !APPROVED.has(t)) {
+  // A standing approval is for a NUMBER the user saw, not a blank cheque for
+  // whatever the feed returns later. It clears only if the figure lands near what
+  // was agreed, and never if the implied P/E says the units are broken. A -95%
+  // collapse or a TWD-against-USD price is not the revision they approved.
+  const pre = PREAPPROVED[t];
+  const unitFault = impliedPe != null && (impliedPe < PE_SANE[0] || impliedPe > PE_SANE[1]);
+  const nearExpected = pre?.expect ? Math.abs(e.consensusNtm / pre.expect - 1) <= (pre.tolerancePct ?? 40) / 100 : false;
+  if (pre && !unitFault && !nearExpected) {
+    act.preApprovalMissed = `expected about ${pre.expect}, got ${e.consensusNtm}`;
+  }
+  const cleared = APPROVED.has(t) || (pre && !unitFault && nearExpected);
+  if (reasons.length && !cleared) {
     act.kind = 'held';
     act.reasons = reasons;
   } else if (reasons.length) {
     act.overridden = reasons;
+    act.viaStandingApproval = !APPROVED.has(t) && !!pre;
   }
   actions.push(act);
 }
@@ -159,7 +175,8 @@ if (!actions.length) {
         `${a.derived ? `  [${a.quarters}q +${a.derived} derived]` : '  [exact 4q]'}` +
         `${a.impliedPe != null ? `  fwdPE ${a.impliedPe}` : ''}`);
       for (const r of a.reasons || []) console.log(`          ↳ held: ${r}`);
-      for (const r of a.overridden || []) console.log(`          ↳ OVERRIDDEN: ${r}`);
+      if (a.preApprovalMissed) console.log(`          ↳ standing approval NOT used: ${a.preApprovalMissed}`);
+      for (const r of a.overridden || []) console.log(`          ↳ ${a.viaStandingApproval ? 'applied under your standing approval' : 'OVERRIDDEN'}: ${r}`);
     } else if (a.kind === 'retire') {
       console.log(`  RETIRE  ${a.t.padEnd(6)} ${a.reason}`);
     } else {
@@ -203,6 +220,10 @@ for (const a of actions) {
     cor.epsAsOf = estFile.fetchedAt.slice(0, 10);
     cor.epsBaselinePeriod = a.reportedPeriod;
     cor.epsApprox = a.approx || undefined;
+    if (config.cutovers?.preapproved?.[a.t] && a.viaStandingApproval) {
+      cor.approvedBy = { ...config.cutovers.preapproved[a.t] };
+      delete config.cutovers.preapproved[a.t];   // one-shot
+    }
     changed++;
   } else if (a.kind === 'retire') {
     config.stocks = config.stocks.filter(s => s.t !== a.t);
