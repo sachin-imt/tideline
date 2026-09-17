@@ -193,7 +193,10 @@ body{background:var(--bg);color:var(--text);font-family:var(--fu);font-size:13px
 .ck-main{flex:1;min-width:0}
 .ck-side{width:240px;flex-shrink:0}
 .ck-wrap{background:var(--bg2);border:1px solid var(--bdr);border-radius:6px;position:relative;overflow:hidden}
-canvas#ckChart{display:block;width:100%;height:auto}
+canvas#ckChart{display:block;width:100%;height:auto;touch-action:pan-y}
+.ck-zoom{display:flex;align-items:center;gap:4px;justify-content:flex-end;margin-bottom:5px}
+.ck-zoom .btn{min-width:26px;font-size:11px;padding:3px 8px}
+.ck-zoom-note{font-family:var(--fm);font-size:9px;color:var(--text-m);margin-right:auto}
 .tt{position:absolute;pointer-events:none;background:var(--bg3);border:1px solid var(--bdr2);border-radius:5px;padding:5px 7px;font-family:var(--fm);font-size:9px;color:var(--text);z-index:10;display:none;white-space:nowrap;box-shadow:0 4px 12px rgba(0,0,0,.3)}
 .tt b{font-size:11px;color:var(--text-h)}
 .tt .muted{color:var(--text-m);font-size:8px}
@@ -454,7 +457,7 @@ canvas#ckChart{display:block;width:100%;height:auto}
     <!-- COCKPIT SCATTER -->
     <div class="ck-view show" id="vScatter">
       <div class="ck-row">
-        <div class="ck-main"><div class="ck-wrap"><canvas id="ckChart" width="900" height="580"></canvas><div class="tt" id="tooltip"></div></div></div>
+        <div class="ck-main"><div class="ck-zoom"><span class="ck-zoom-note" id="ckZoomNote"></span><button class="btn" onclick="zoomBy(0.6)" title="Zoom in">+</button><button class="btn" onclick="zoomBy(1/0.6)" title="Zoom out">&minus;</button><button class="btn" id="ckZoomReset" onclick="setView(HOME)" title="Show everything">Reset</button></div><div class="ck-wrap"><canvas id="ckChart" width="900" height="580"></canvas><div class="tt" id="tooltip"></div></div></div>
         <div class="ck-side" id="sidebar"></div>
       </div>
     </div>
@@ -748,12 +751,36 @@ function calc(s,idx){
 // ═══ COCKPIT SCATTER ═══
 var PAD={t:45,r:25,b:45,l:50};
 var CW2=900,CH2=580,CWi=CW2-PAD.l-PAD.r,CHi=CH2-PAD.t-PAD.b;
-var X_MIN=-0.25,X_MAX=1.8,Y_MIN=0,Y_MAX=4.2;
-// Pin a dot to the edge rather than let it leave the canvas — now that the
-// axes move with the market, an extreme day would otherwise make a name vanish.
+// HOME is the full view; VIEW narrows as the reader zooms. The zoom survives
+// date changes on purpose, so a tight cluster can be watched moving day to day.
+var HOME={x0:-0.25,x1:1.8,y0:0,y1:4.2};
+var VIEW=Object.assign({},HOME);
+var MIN_SPAN={x:0.02,y:0.05};
+var DRAG=null;
+function zoomed(){return VIEW.x0!==HOME.x0||VIEW.x1!==HOME.x1||VIEW.y0!==HOME.y0||VIEW.y1!==HOME.y1;}
 function clampV(v,a,b){return Math.max(a,Math.min(b,v));}
-function toX(u){return PAD.l+((clampV(u,X_MIN,X_MAX)-X_MIN)/(X_MAX-X_MIN))*CWi;}
-function toY(p){return PAD.t+((clampV(p,Y_MIN,Y_MAX)-Y_MIN)/(Y_MAX-Y_MIN))*CHi;}
+// At the full view, pin extreme dots to the edge so no name vanishes on a wild
+// day. When zoomed, a name outside the view is simply off-screen: pinning it
+// would pile every excluded name onto the border — the clutter zoom removes.
+function toX(u){var v=zoomed()?u:clampV(u,VIEW.x0,VIEW.x1);return PAD.l+((v-VIEW.x0)/(VIEW.x1-VIEW.x0))*CWi;}
+function toY(p){var v=zoomed()?p:clampV(p,VIEW.y0,VIEW.y1);return PAD.t+((v-VIEW.y0)/(VIEW.y1-VIEW.y0))*CHi;}
+function fromX(px){return VIEW.x0+(px-PAD.l)/CWi*(VIEW.x1-VIEW.x0);}
+function fromY(py){return VIEW.y0+(py-PAD.t)/CHi*(VIEW.y1-VIEW.y0);}
+function inPlot(x,y){return x>=PAD.l&&x<=PAD.l+CWi&&y>=PAD.t&&y<=PAD.t+CHi;}
+function niceStep(span,target){var raw=span/target,mag=Math.pow(10,Math.floor(Math.log10(raw))),n=raw/mag;return (n<1.5?1:n<3?2:n<7?5:10)*mag;}
+function ticks(a,b,step){var out=[];for(var v=Math.ceil(a/step-1e-9)*step;v<=b+1e-9;v+=step)out.push(Math.round(v/step)*step);return out;}
+function setView(v){
+  var sx=clampV(v.x1-v.x0,MIN_SPAN.x,HOME.x1-HOME.x0), sy=clampV(v.y1-v.y0,MIN_SPAN.y,HOME.y1-HOME.y0);
+  var cx=(v.x0+v.x1)/2, cy=(v.y0+v.y1)/2;
+  var x0=clampV(cx-sx/2,HOME.x0,HOME.x1-sx), y0=clampV(cy-sy/2,HOME.y0,HOME.y1-sy);
+  VIEW={x0:x0,x1:x0+sx,y0:y0,y1:y0+sy};
+  if(sx>=HOME.x1-HOME.x0-1e-9&&sy>=HOME.y1-HOME.y0-1e-9)VIEW=Object.assign({},HOME);
+  drawCockpit();
+}
+function zoomBy(f,ax,ay){
+  if(ax==null){ax=(VIEW.x0+VIEW.x1)/2;ay=(VIEW.y0+VIEW.y1)/2;}
+  setView({x0:ax-(ax-VIEW.x0)*f,x1:ax+(VIEW.x1-ax)*f,y0:ay-(ay-VIEW.y0)*f,y1:ay+(VIEW.y1-ay)*f});
+}
 
 function drawCockpit(){
   var canvas=document.getElementById('ckChart');
@@ -769,53 +796,107 @@ function drawCockpit(){
   var txtm=dark?'#6e7a91':'#6b7280';
   var txth=dark?'#e2e8f3':'#111827';
   ctx.fillStyle=bgc;ctx.fillRect(0,0,CW2,CH2);
-  var xZ=toX(0),y1=toY(1);
-  ctx.fillStyle=dark?'rgba(34,197,94,0.04)':'rgba(34,197,94,0.06)';ctx.fillRect(xZ,PAD.t,PAD.l+CWi-xZ,y1-PAD.t);
-  ctx.fillStyle=dark?'rgba(234,179,8,0.03)':'rgba(234,179,8,0.05)';ctx.fillRect(xZ,y1,PAD.l+CWi-xZ,PAD.t+CHi-y1);
-  ctx.fillStyle=dark?'rgba(100,116,139,0.03)':'rgba(100,116,139,0.04)';ctx.fillRect(PAD.l,PAD.t,xZ-PAD.l,y1-PAD.t);
-  ctx.fillStyle=dark?'rgba(239,68,68,0.03)':'rgba(239,68,68,0.04)';ctx.fillRect(PAD.l,y1,xZ-PAD.l,PAD.t+CHi-y1);
+
+  // quadrant shading, clipped to whatever part of it is in view
+  var L=PAD.l,R=PAD.l+CWi,T=PAD.t,Bm=PAD.t+CHi;
+  var xZ=clampV(toX(0),L,R),y1=clampV(toY(1),T,Bm);
+  ctx.fillStyle=dark?'rgba(34,197,94,0.04)':'rgba(34,197,94,0.06)';ctx.fillRect(xZ,T,R-xZ,y1-T);
+  ctx.fillStyle=dark?'rgba(234,179,8,0.03)':'rgba(234,179,8,0.05)';ctx.fillRect(xZ,y1,R-xZ,Bm-y1);
+  ctx.fillStyle=dark?'rgba(100,116,139,0.03)':'rgba(100,116,139,0.04)';ctx.fillRect(L,T,xZ-L,y1-T);
+  ctx.fillStyle=dark?'rgba(239,68,68,0.03)':'rgba(239,68,68,0.04)';ctx.fillRect(L,y1,xZ-L,Bm-y1);
+
+  // grid, with steps that suit the current zoom
+  var sxStep=niceStep(VIEW.x1-VIEW.x0,8), syStep=niceStep(VIEW.y1-VIEW.y0,8);
+  var xt=ticks(VIEW.x0,VIEW.x1,sxStep), yt=ticks(VIEW.y0,VIEW.y1,syStep);
   ctx.strokeStyle=bdr;ctx.lineWidth=0.5;ctx.setLineDash([4,4]);
-  for(var p2=0;p2<=4;p2+=0.5){var yy=toY(p2);ctx.beginPath();ctx.moveTo(PAD.l,yy);ctx.lineTo(PAD.l+CWi,yy);ctx.stroke();}
-  for(var u=-0.2;u<=1.8;u+=0.25){var xx=toX(u);ctx.beginPath();ctx.moveTo(xx,PAD.t);ctx.lineTo(xx,PAD.t+CHi);ctx.stroke();}
+  yt.forEach(function(v){var yy=toY(v);ctx.beginPath();ctx.moveTo(L,yy);ctx.lineTo(R,yy);ctx.stroke();});
+  xt.forEach(function(v){var xx=toX(v);ctx.beginPath();ctx.moveTo(xx,T);ctx.lineTo(xx,Bm);ctx.stroke();});
   ctx.setLineDash([]);
   ctx.strokeStyle='rgba(239,68,68,0.3)';ctx.lineWidth=1;ctx.setLineDash([6,4]);
-  ctx.beginPath();ctx.moveTo(xZ,PAD.t);ctx.lineTo(xZ,PAD.t+CHi);ctx.stroke();
-  ctx.beginPath();ctx.moveTo(PAD.l,y1);ctx.lineTo(PAD.l+CWi,y1);ctx.stroke();
+  if(0>=VIEW.x0&&0<=VIEW.x1){ctx.beginPath();ctx.moveTo(xZ,T);ctx.lineTo(xZ,Bm);ctx.stroke();}
+  if(1>=VIEW.y0&&1<=VIEW.y1){ctx.beginPath();ctx.moveTo(L,y1);ctx.lineTo(R,y1);ctx.stroke();}
   ctx.setLineDash([]);
   ctx.fillStyle=txtm;ctx.font='10px IBM Plex Mono';ctx.textAlign='center';
-  for(var u2=-0.2;u2<=1.6;u2+=0.25)ctx.fillText((u2>=0?'+':'')+Math.round(u2*100)+'%',toX(u2),PAD.t+CHi+14);
-  ctx.fillText('Implied Upside/Downside',PAD.l+CWi/2,CH2-6);
+  var xdp=sxStep<0.01?1:0, ydp=syStep<0.1?2:1;
+  xt.forEach(function(v){var pct=v*100;ctx.fillText((pct>0?'+':'')+pct.toFixed(xdp)+'%',toX(v),Bm+14);});
+  ctx.fillText('Implied Upside/Downside',L+CWi/2,CH2-6);
   ctx.textAlign='right';
-  for(var p3=0;p3<=4;p3+=0.5)ctx.fillText(p3.toFixed(1),PAD.l-6,toY(p3)+4);
-  ctx.save();ctx.translate(10,PAD.t+CHi/2);ctx.rotate(-Math.PI/2);ctx.textAlign='center';ctx.fillText('PEG Ratio',0,0);ctx.restore();
+  yt.forEach(function(v){ctx.fillText(v.toFixed(ydp),L-6,toY(v)+4);});
+  ctx.save();ctx.translate(10,T+CHi/2);ctx.rotate(-Math.PI/2);ctx.textAlign='center';ctx.fillText('PEG Ratio',0,0);ctx.restore();
   ctx.font='9px IBM Plex Mono';ctx.fillStyle=txtm;ctx.textAlign='left';
-  ctx.fillText('▲ Inexpensive',PAD.l+6,PAD.t+14);
-  ctx.textAlign='right';ctx.fillText('Upside ▸',PAD.l+CWi-6,toY(1)-6);
-  ctx.textAlign='left';ctx.fillText('◂ Downside',PAD.l+6,toY(1)-6);
-  ctx.fillText('▼ Expensive',PAD.l+6,PAD.t+CHi-6);
+  ctx.fillText('▲ Inexpensive',L+6,T+14);
+  var ly=(1>=VIEW.y0&&1<=VIEW.y1)?y1-6:T+28;
+  ctx.textAlign='right';ctx.fillText('Upside ▸',R-6,ly);
+  ctx.textAlign='left';ctx.fillText('◂ Downside',L+6,ly);
+  ctx.fillText('▼ Expensive',L+6,Bm-6);
+
   var cur=[],prev=[];
   STOCKS.forEach(function(s){
     var c2=calc(s,curIdx);if(c2&&c2.peg!==null)cur.push(c2);
     if(showGhost&&curIdx>0){var p4=calc(s,curIdx-1);if(p4&&p4.peg!==null)prev.push(p4);}
   });
+
+  ctx.save();ctx.beginPath();ctx.rect(L,T,CWi,CHi);ctx.clip();
   if(showGhost)prev.forEach(function(d){
     var x=toX(d.upside),y=toY(d.peg);
-    if(x<PAD.l||x>PAD.l+CWi||y<PAD.t||y>PAD.t+CHi)return;
+    if(!inPlot(x,y))return;
     ctx.beginPath();ctx.arc(x,y,7,0,Math.PI*2);ctx.fillStyle='rgba(107,114,128,0.15)';ctx.fill();
   });
   cur.sort(function(a,b){return b.peg-a.peg;});
+  var shown=[];
   cur.forEach(function(d){
     var x=toX(d.upside),y=toY(d.peg);
-    var cx=Math.max(PAD.l+10,Math.min(PAD.l+CWi-10,x));
-    var cy=Math.max(PAD.t+10,Math.min(PAD.t+CHi-10,y));
+    if(zoomed()&&!inPlot(x,y))return;
+    var cx=clampV(x,L+10,R-10), cy=clampV(y,T+10,Bm-10);
     var col=d.quad==='UI'?'#e8622c':d.quad==='UE'?'#2bb5a0':d.quad==='DE'?'#8b95a5':'#5b9bd5';
-    ctx.beginPath();ctx.arc(cx,cy,10,0,Math.PI*2);
-    ctx.fillStyle=col;ctx.globalAlpha=0.9;ctx.fill();ctx.globalAlpha=1;
-    ctx.strokeStyle=dark?'rgba(255,255,255,0.15)':'rgba(0,0,0,0.1)';ctx.lineWidth=1;ctx.stroke();
-    ctx.fillStyle=txth;ctx.font='600 9px IBM Plex Sans';ctx.textAlign='center';
-    ctx.fillText(d.n,cx,cy-14);
+    ctx.beginPath();ctx.arc(cx,cy,9,0,Math.PI*2);
+    ctx.fillStyle=col;ctx.globalAlpha=0.85;ctx.fill();ctx.globalAlpha=1;
+    ctx.strokeStyle=dark?'rgba(255,255,255,0.35)':'rgba(255,255,255,0.9)';ctx.lineWidth=1.5;ctx.stroke();
+    shown.push(Object.assign({},d,{cx:cx,cy:cy}));
   });
-  canvas._dots=cur.map(function(d){return Object.assign({},d,{cx:Math.max(PAD.l,Math.min(PAD.l+CWi,toX(d.upside))),cy:Math.max(PAD.t,Math.min(PAD.t+CHi,toY(d.peg)))});});
+  ctx.restore();
+
+  // Labels: try above, below, right, left; skip only if every spot collides.
+  // A hidden label is still one hover away, and the note says to zoom.
+  ctx.font='600 9px IBM Plex Sans';
+  var boxes=shown.map(function(d){return {x:d.cx-9,y:d.cy-9,w:18,h:18};});
+  var hit=function(b){return b.x<L||b.x+b.w>R||b.y<T||b.y+b.h>Bm||boxes.some(function(o){return b.x<o.x+o.w&&b.x+b.w>o.x&&b.y<o.y+o.h&&b.y+b.h>o.y;});};
+  var hidden=0;
+  shown.forEach(function(d){
+    var w=ctx.measureText(d.n).width, h=10;
+    var spots=[
+      {x:d.cx-w/2,y:d.cy-12-h,align:'center',tx:d.cx,ty:d.cy-13},
+      {x:d.cx-w/2,y:d.cy+12,align:'center',tx:d.cx,ty:d.cy+21},
+      {x:d.cx+12,y:d.cy-h/2,align:'left',tx:d.cx+12,ty:d.cy+3},
+      {x:d.cx-12-w,y:d.cy-h/2,align:'right',tx:d.cx-12,ty:d.cy+3}
+    ];
+    for(var i=0;i<spots.length;i++){
+      var sp=spots[i],box={x:sp.x-1,y:sp.y-1,w:w+2,h:h+2};
+      if(!hit(box)){
+        boxes.push(box);
+        ctx.fillStyle=txth;ctx.textAlign=sp.align;ctx.fillText(d.n,sp.tx,sp.ty);
+        return;
+      }
+    }
+    hidden++;
+  });
+
+  if(DRAG){
+    var dx=Math.min(DRAG.x0,DRAG.x1),dy=Math.min(DRAG.y0,DRAG.y1);
+    ctx.fillStyle='rgba(91,141,239,0.10)';ctx.strokeStyle='rgba(91,141,239,0.8)';ctx.lineWidth=1;
+    ctx.fillRect(dx,dy,Math.abs(DRAG.x1-DRAG.x0),Math.abs(DRAG.y1-DRAG.y0));
+    ctx.strokeRect(dx,dy,Math.abs(DRAG.x1-DRAG.x0),Math.abs(DRAG.y1-DRAG.y0));
+  }
+
+  var note=document.getElementById('ckZoomNote');
+  if(note){
+    var bits=[];
+    if(zoomed())bits.push('Zoomed · '+(cur.length-shown.length)+' outside view');
+    if(hidden)bits.push(hidden+' label'+(hidden>1?'s':'')+' hidden — zoom in or hover');
+    note.textContent=bits.length?bits.join(' · '):'Drag to zoom · pinch or ⌘-scroll · double-click to reset';
+  }
+  var rb=document.getElementById('ckZoomReset');if(rb)rb.disabled=!zoomed();
+  canvas._dots=shown;
   updateSidebar(cur);
 }
 
@@ -1078,21 +1159,62 @@ function renderCk(){
   else if(curCkView==='snap')renderSnapshots();
 }
 
-// Tooltip
-document.getElementById('ckChart').addEventListener('mousemove',function(e){
-  var rect=this.getBoundingClientRect();
-  var mx=e.clientX-rect.left,my=e.clientY-rect.top;
-  var dots=this._dots||[];
-  var tt=document.getElementById('tooltip');
-  var hit=null;
-  for(var i=0;i<dots.length;i++)if(Math.hypot(dots[i].cx-mx,dots[i].cy-my)<14){hit=dots[i];break;}
-  if(hit){
-    tt.style.display='block';tt.style.left=(hit.cx+12)+'px';tt.style.top=(hit.cy-8)+'px';
-    var s=STOCKS.find(function(s){return s.t===hit.t;});
-    var eb=s&&s.est==='aj'?'AJ Est':'Cons Est';
-    tt.innerHTML='<b>'+hit.t+' — '+hit.n+'</b><div class="muted">'+eb+'</div><div>'+money(hit.t,hit.p)+' · Fwd P/E '+hit.fpe.toFixed(1)+'x</div><div>PEG: '+hit.peg.toFixed(2)+' · Upside: '+(hit.upside>=0?'+':'')+Math.round(hit.upside*100)+'%</div>'+(hit.chg!==null?'<div>Day Chg: '+(hit.chg>=0?'+':'')+hit.chg.toFixed(1)+'%</div>':'');
-  }else tt.style.display='none';
-});
+// Canvas is drawn at 900×580 but may be shown smaller; map CSS px to canvas px.
+function ckPoint(e){
+  var c=document.getElementById('ckChart'),r=c.getBoundingClientRect();
+  var k=CW2/r.width;
+  return {x:(e.clientX-r.left)*k,y:(e.clientY-r.top)*k,k:k};
+}
+(function(){
+  var cv=document.getElementById('ckChart');
+  cv.addEventListener('mousemove',function(e){
+    var m=ckPoint(e);
+    cv.style.cursor=inPlot(m.x,m.y)?'crosshair':'default';
+    var tt=document.getElementById('tooltip');
+    if(DRAG){tt.style.display='none';return;}
+    var dots=this._dots||[],hit=null;
+    for(var i=0;i<dots.length;i++)if(Math.hypot(dots[i].cx-m.x,dots[i].cy-m.y)<12){hit=dots[i];break;}
+    if(hit){
+      tt.style.display='block';tt.style.left=(hit.cx/m.k+12)+'px';tt.style.top=(hit.cy/m.k-8)+'px';
+      var s=STOCKS.find(function(s){return s.t===hit.t;});
+      var cor=C[hit.t]||{};
+      var eb=cor.epsSource==='cons'?'Consensus estimate':'AJ estimate';
+      tt.innerHTML='<b>'+hit.t+' — '+hit.n+'</b><div class="muted">'+eb+'</div><div>'+money(hit.t,hit.p)+' · Fwd P/E '+hit.fpe.toFixed(1)+'x</div><div>PEG: '+hit.peg.toFixed(2)+' · Upside: '+(hit.upside>=0?'+':'')+Math.round(hit.upside*100)+'%</div>'+(hit.chg!==null?'<div>Day Chg: '+(hit.chg>=0?'+':'')+hit.chg.toFixed(1)+'%</div>':'');
+    }else tt.style.display='none';
+  });
+  cv.addEventListener('mouseleave',function(){document.getElementById('tooltip').style.display='none';});
+  cv.addEventListener('mousedown',function(e){
+    var m=ckPoint(e);if(!inPlot(m.x,m.y)||e.button!==0)return;
+    e.preventDefault();
+    DRAG={x0:m.x,y0:m.y,x1:m.x,y1:m.y};
+  });
+  window.addEventListener('mousemove',function(e){
+    if(!DRAG)return;
+    var m=ckPoint(e);
+    DRAG.x1=clampV(m.x,PAD.l,PAD.l+CWi);DRAG.y1=clampV(m.y,PAD.t,PAD.t+CHi);
+    drawCockpit();
+  });
+  window.addEventListener('mouseup',function(){
+    if(!DRAG)return;
+    var d=DRAG;DRAG=null;
+    var wx=Math.abs(d.x1-d.x0)>8, wy=Math.abs(d.y1-d.y0)>8;
+    if(!wx&&!wy){drawCockpit();return;}
+    // a mostly-horizontal drag zooms only upside; mostly-vertical only PEG
+    setView({
+      x0:wx?fromX(Math.min(d.x0,d.x1)):VIEW.x0, x1:wx?fromX(Math.max(d.x0,d.x1)):VIEW.x1,
+      y0:wy?fromY(Math.min(d.y0,d.y1)):VIEW.y0, y1:wy?fromY(Math.max(d.y0,d.y1)):VIEW.y1
+    });
+  });
+  cv.addEventListener('dblclick',function(){setView(HOME);});
+  // Pinch on a trackpad arrives as a ctrl+wheel event; ⌘/ctrl+scroll does the
+  // same with a mouse. A plain scroll still scrolls the page.
+  cv.addEventListener('wheel',function(e){
+    if(!(e.ctrlKey||e.metaKey))return;
+    e.preventDefault();
+    var m=ckPoint(e);if(!inPlot(m.x,m.y))return;
+    zoomBy(Math.exp(clampV(e.deltaY,-50,50)*0.01),fromX(m.x),fromY(m.y));
+  },{passive:false});
+})();
 
 document.addEventListener('keydown',function(e){
   if(document.getElementById('tab-cockpit').classList.contains('on')){
