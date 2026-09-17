@@ -1,6 +1,5 @@
 {
   "dates": [
-    "Aug 19",
     "Aug 20",
     "Aug 21",
     "Aug 24",
@@ -19,7 +18,8 @@
     "Sep 11",
     "Sep 14",
     "Sep 15",
-    "Sep 16"
+    "Sep 16",
+    "Sep 17"
   ],
   "snapshots": {
     "MU": [
@@ -158,8 +158,8 @@
       "UE",
       "UE",
       "UE",
-      "UE",
       "DE",
+      "UE",
       "UE",
       "UE",
       "UE",
@@ -294,13 +294,13 @@
       "UE",
       "UE",
       "UE",
-      "UE",
       "UI",
       "UI",
       "UI",
       "UI",
       "UI",
       "UE",
+      "UI",
       "UI",
       "UI",
       "UI",
@@ -400,23 +400,23 @@
       "UE",
       "UE",
       "UE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
       "UE",
-      "DE",
-      "DE",
-      "DE",
-      "DE",
-      "DE",
-      "DE",
-      "DE",
-      "DE",
-      "DE",
-      "DE",
-      "DE",
-      "DE",
-      "DE",
-      "DE",
-      "DE",
-      "UE"
+      "DE"
     ],
     "AAPL": [
       "UE",
@@ -507,5 +507,5 @@
       "UI"
     ]
   },
-  "lastUpdated": "2026-09-17T12:44:42.818Z"
+  "lastUpdated": "2026-09-17T23:52:19.385Z"
 }
