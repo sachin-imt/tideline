@@ -98,6 +98,6 @@ data. **Pages is the single dashboard.**
 ## Related
 
 - `/tideline-brief` — sends the brief and alerts (run after this)
-- Dashboard: https://sachin-imt.github.io/tradingview-mcp-sachin/
-- Runs: https://github.com/sachin-imt/tradingview-mcp-sachin/actions
+- Dashboard: https://sachin-imt.github.io/tideline/
+- Runs: https://github.com/sachin-imt/tideline/actions
 - AJ's final state: `docs/archive/2026-09-08.html`

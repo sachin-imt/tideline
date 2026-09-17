@@ -1,4 +1,4 @@
-name: Daily Dashboard Update
+name: Tideline daily
 
 on:
   schedule:
@@ -31,22 +31,8 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install Playwright
-        run: npx playwright install chromium --with-deps
-        if: env.AJ_USERNAME != ''
-        env:
-          AJ_USERNAME: ${{ secrets.AJ_USERNAME }}
-
       - name: Fetch prices (Yahoo Finance)
         run: node pipeline/fetch-prices.js
-
-      - name: Fetch AJ data (if credentials available)
-        run: node pipeline/fetch-aj.js
-        if: env.AJ_USERNAME != ''
-        env:
-          AJ_USERNAME: ${{ secrets.AJ_USERNAME }}
-          AJ_PASSWORD: ${{ secrets.AJ_PASSWORD }}
-        continue-on-error: true
 
       - name: Fetch consensus estimates
         run: node pipeline/fetch-estimates.js
@@ -102,5 +88,5 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add pipeline/data/ docs/
           git diff --cached --quiet && echo "No changes" && exit 0
-          git commit -m "Daily update: $(date -u +%Y-%m-%d) prices and dashboard"
+          git commit -m "Daily update: $(date -u +%Y-%m-%d) Tideline prices and dashboard"
           git push

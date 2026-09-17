@@ -1,0 +1,15 @@
+{
+  "name": "tideline",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Daily valuation corridors for a book of AI and semiconductor stocks, with an emailed brief.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "capture": "node pipeline/fetch-prices.js && node pipeline/fetch-estimates.js && node pipeline/apply-estimates.js --apply && node pipeline/build-eps-series.js && node pipeline/update-data.js && node pipeline/build.js && node pipeline/briefing.js",
+    "build": "node pipeline/update-data.js && node pipeline/build.js",
+    "brief": "node pipeline/briefing.js",
+    "brief:preview": "node pipeline/send-brief.js --dry-run --force",
+    "serve": "python3 -m http.server 8765 --directory docs"
+  }
+}

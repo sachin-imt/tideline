@@ -152,7 +152,7 @@ if (reports.length) {
 if (nothing) T.push('Nothing moved enough to flag today.', '');
 T.push('—', 'This is a valuation gauge, not advice. It only knows where the price sits',
   'against the range this stock usually trades in. It knows nothing about the news.', '',
-  'Dashboard: https://sachin-imt.github.io/tradingview-mcp-sachin/');
+  'Dashboard: https://sachin-imt.github.io/tideline/');
 const text = T.join('\n');
 
 // ── html ────────────────────────────────────────────────────────────────────
@@ -251,7 +251,7 @@ const html = `<!doctype html><html><body style="margin:0;padding:0;background:#f
       this stock usually trades in &mdash; nothing about the news or the business.
     </div>
     <div style="padding-top:12px">
-      <a href="https://sachin-imt.github.io/tradingview-mcp-sachin/"
+      <a href="https://sachin-imt.github.io/tideline/"
         style="font:13px -apple-system,Segoe UI,Roboto,sans-serif;color:#2c6bb3;text-decoration:none">View the dashboard &rarr;</a>
     </div></td></tr>
 

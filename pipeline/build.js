@@ -11,7 +11,7 @@ import { fileURLToPath } from 'url';
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const root = join(__dir, '..');
-const templatePath = join(root, 'sachins-dashboard.html');
+const templatePath = join(root, 'tideline.html');
 const outPath = join(root, 'docs', 'index.html');
 
 const configPath = join(__dir, 'config.json');

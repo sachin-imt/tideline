@@ -81,6 +81,6 @@ claim a WhatsApp send happened.
 ## Related
 
 - `/tideline` — capture and recompute (run first)
-- Dashboard: https://sachin-imt.github.io/tradingview-mcp-sachin/
+- Dashboard: https://sachin-imt.github.io/tideline/
 
-- Runs: https://github.com/sachin-imt/tradingview-mcp-sachin/actions
+- Runs: https://github.com/sachin-imt/tideline/actions

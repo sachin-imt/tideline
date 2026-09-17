@@ -1,0 +1,10 @@
+# secrets — FINNHUB_KEY, SMTP_USER, SMTP_PASS live here locally and as repo secrets in CI
+.env
+.env.local
+*.key
+
+node_modules/
+.DS_Store
+*.log
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
