@@ -1,6 +1,6 @@
 {
   "date": "2026-09-16",
-  "generatedAt": "2026-09-17T12:24:03.329Z",
+  "generatedAt": "2026-09-17T12:28:54.793Z",
   "maxChanges": 15,
   "changeCount": 4,
   "truncated": false,
@@ -184,7 +184,15 @@
       "zone": "Attractive"
     }
   ],
-  "quadrantMoves": [],
+  "quadrantMoves": [
+    {
+      "t": "MSFT",
+      "from": "DE",
+      "to": "UE",
+      "fromLabel": "pricey, no upside",
+      "toLabel": "upside, but pricey"
+    }
+  ],
   "cutovers": {
     "applied": [],
     "held": []
