@@ -1,6 +1,6 @@
 {
   "date": "2026-09-21",
-  "generatedAt": "2026-09-22T03:49:47.767Z",
+  "generatedAt": "2026-09-22T11:18:35.956Z",
   "maxChanges": 15,
   "changeCount": 10,
   "truncated": false,
@@ -333,6 +333,15 @@
       "zone": "Attractive"
     },
     {
+      "t": "ASML",
+      "move": -0.5638340716874657,
+      "dTotal": -0.1207567149082378,
+      "dPrice": -0.026170180948107854,
+      "dBands": -0.09458653396012995,
+      "pos": 0.036631673396141366,
+      "zone": "Attractive"
+    },
+    {
       "t": "AVGO",
       "move": 1.0870777121195323,
       "dTotal": -0.08998543734983863,
@@ -647,6 +656,31 @@
       "zoneChanged": true,
       "isChange": true,
       "counted": true
+    },
+    {
+      "t": "ASML",
+      "n": "ASML",
+      "tier": "other",
+      "threshold": 4,
+      "mcapM": 573130,
+      "price": 1481.4,
+      "move": 2.448132780082994,
+      "zone": "Attractive",
+      "prevZone": "Attractive",
+      "pos": 0.036631673396141366,
+      "prevPos": -0.06400243779379647,
+      "dPosPrice": 0.11028861970988517,
+      "dPosBands": -0.009654508519947327,
+      "dPosTotal": 0.10063411118993784,
+      "lo": 1469.6421120000002,
+      "hi": 1790.618112,
+      "med": 1630.130112,
+      "epsSource": "aj",
+      "nextReport": "2026-10-14",
+      "breached": false,
+      "zoneChanged": false,
+      "isChange": false,
+      "counted": false
     },
     {
       "t": "INTC",
