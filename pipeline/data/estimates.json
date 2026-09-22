@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-22T12:34:48.055Z",
+  "fetchedAt": "2026-09-22T21:49:31.154Z",
   "source": "finnhub-free",
   "note": "Observational only. apply-estimates.js decides when a name switches off AJ.",
   "coverage": "21/22",
@@ -32,16 +32,16 @@
         }
       ],
       "symbol": "MU",
-      "consensusNtm": 149.5537,
+      "consensusNtm": 149.589,
       "quarters": 3,
       "derived": 1,
-      "step": 1.098,
+      "step": 1.096,
       "forward": [
         {
           "fy": 2026,
           "q": 4,
           "reportDate": "2026-09-30",
-          "eps": 32.2164
+          "eps": 32.3202
         },
         {
           "fy": 2027,
