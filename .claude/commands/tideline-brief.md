@@ -3,13 +3,13 @@ Run `/tideline` first — it produces the data this reads.
 
 ## Schedule
 
-Intended for **17:00 Australian eastern time**, covering the most recently
-completed US session. Sydney at 17:00 is 07:00 UTC on AEST and 06:00 UTC on
+Intended for **12:00 Australian eastern time**, covering the most recently
+completed US session. Sydney at 12:00 is 02:00 UTC on AEST and 01:00 UTC on
 AEDT, so a fixed UTC cron drifts by an hour across the DST boundary in early
 October and early April. Either accept the drift or carry two cron entries.
 
-The US close lands 11 hours before, so the session is fully settled. Note the
-consequence: **Friday's US session is briefed on Saturday afternoon Sydney
+The US close lands 6 hours before, so the session is fully settled. Note the
+consequence: **Friday's US session is briefed on Saturday midday Sydney
 time.** That is correct by construction, not a bug.
 
 ## Do not send on a day with no new session

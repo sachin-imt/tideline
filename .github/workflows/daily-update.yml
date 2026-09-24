@@ -4,16 +4,18 @@ on:
   schedule:
     # Capture: after the US close, so the dashboard is current overnight.
     - cron: '0 22 * * *'
-    # Brief: target 17:07 Sydney (07:07 UTC on AEST). GitHub runs scheduled jobs
-    # best-effort and has been dropping the 07:07 slot by ~5.5 hours, landing the
-    # email near 22:40 Sydney. These later slots are fallbacks, not extra emails:
-    # send-brief.js refuses to send a session twice, so whichever run fires first
-    # sends and the rest exit clean. Nothing is scheduled before the target, so
-    # the brief can never arrive early.
-    - cron: '7 7 * * 2-6'
-    - cron: '13 8 * * 2-6'
-    - cron: '23 9 * * 2-6'
-    - cron: '31 10 * * 2-6'
+    # Brief: target 12:03 Sydney = 02:03 UTC on AEST, six hours after the US
+    # close, so the session is fully settled. Tue-Sat covers Mon-Fri US sessions.
+    #
+    # GitHub runs scheduled jobs best-effort and has been dropping slots by hours,
+    # so the later entries are fallbacks, not extra emails: send-brief.js refuses
+    # to send a session twice, whichever fires first sends, the rest exit clean.
+    # The last one is a floor, not a target -- it still lands inside the day.
+    # Nothing is scheduled before 02:03, so the brief can never arrive early.
+    - cron: '3 2 * * 2-6'
+    - cron: '11 3 * * 2-6'
+    - cron: '19 4 * * 2-6'
+    - cron: '27 6 * * 2-6'
   workflow_dispatch: # manual trigger
     inputs:
       send_brief:
@@ -78,7 +80,7 @@ jobs:
       # send-brief.js refuses on its own if the session was already sent or the
       # feed is stale, so a double trigger cannot double-send.
       - name: Send brief
-        if: contains(fromJSON('["7 7 * * 2-6","13 8 * * 2-6","23 9 * * 2-6","31 10 * * 2-6"]'), github.event.schedule) || inputs.send_brief
+        if: contains(fromJSON('["3 2 * * 2-6","11 3 * * 2-6","19 4 * * 2-6","27 6 * * 2-6"]'), github.event.schedule) || inputs.send_brief
         run: node pipeline/send-brief.js
         env:
           SMTP_USER: ${{ secrets.SMTP_USER }}
