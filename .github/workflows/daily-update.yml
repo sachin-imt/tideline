@@ -2,14 +2,18 @@ name: Tideline daily
 
 on:
   schedule:
-    # Capture: 22:00 UTC daily, just after the US close, so the dashboard is
-    # current overnight.
+    # Capture: after the US close, so the dashboard is current overnight.
     - cron: '0 22 * * *'
-    # Brief: 07:07 UTC Tue-Sat = 17:07 Sydney on AEST, covering the US session
-    # that closed 11 hours earlier. Friday's US session is therefore briefed on
-    # Saturday afternoon Sydney time, which is correct by construction.
-    # Fixed UTC by the user's choice, so it lands an hour later over AEDT.
+    # Brief: target 17:07 Sydney (07:07 UTC on AEST). GitHub runs scheduled jobs
+    # best-effort and has been dropping the 07:07 slot by ~5.5 hours, landing the
+    # email near 22:40 Sydney. These later slots are fallbacks, not extra emails:
+    # send-brief.js refuses to send a session twice, so whichever run fires first
+    # sends and the rest exit clean. Nothing is scheduled before the target, so
+    # the brief can never arrive early.
     - cron: '7 7 * * 2-6'
+    - cron: '13 8 * * 2-6'
+    - cron: '23 9 * * 2-6'
+    - cron: '31 10 * * 2-6'
   workflow_dispatch: # manual trigger
     inputs:
       send_brief:
@@ -74,7 +78,7 @@ jobs:
       # send-brief.js refuses on its own if the session was already sent or the
       # feed is stale, so a double trigger cannot double-send.
       - name: Send brief
-        if: github.event.schedule == '7 7 * * 2-6' || inputs.send_brief
+        if: contains(fromJSON('["7 7 * * 2-6","13 8 * * 2-6","23 9 * * 2-6","31 10 * * 2-6"]'), github.event.schedule) || inputs.send_brief
         run: node pipeline/send-brief.js
         env:
           SMTP_USER: ${{ secrets.SMTP_USER }}
