@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-28T00:16:24.727Z",
+  "fetchedAt": "2026-09-29T01:25:46.683Z",
   "source": "finnhub-free",
   "note": "Observational only. apply-estimates.js decides when a name switches off AJ.",
   "coverage": "21/22",
@@ -292,7 +292,7 @@
         {
           "fy": 2026,
           "q": 3,
-          "reportDate": "2026-10-27",
+          "reportDate": "2026-10-28",
           "eps": 6.5922
         },
         {
@@ -315,7 +315,7 @@
         "FY2027Q1",
         "derived"
       ],
-      "nextReport": "2026-10-27",
+      "nextReport": "2026-10-28",
       "status": "ok",
       "vsAj": 3
     },
@@ -418,7 +418,7 @@
         {
           "fy": 2026,
           "q": 3,
-          "reportDate": "2026-11-02",
+          "reportDate": "2026-10-29",
           "eps": 0.9745
         },
         {
@@ -441,7 +441,7 @@
         "FY2027Q1",
         "derived"
       ],
-      "nextReport": "2026-11-02",
+      "nextReport": "2026-10-29",
       "status": "ok",
       "vsAj": 12.1
     },
@@ -544,7 +544,7 @@
         {
           "fy": 2026,
           "q": 3,
-          "reportDate": "2026-10-28",
+          "reportDate": "2026-10-29",
           "eps": 1.9886
         },
         {
@@ -567,7 +567,7 @@
         "FY2027Q1",
         "derived"
       ],
-      "nextReport": "2026-10-28",
+      "nextReport": "2026-10-29",
       "status": "ok",
       "vsAj": 21.2
     },
@@ -1174,7 +1174,7 @@
         {
           "fy": 2026,
           "q": 4,
-          "reportDate": "2026-10-28",
+          "reportDate": "2026-10-29",
           "eps": 2.0219
         },
         {
@@ -1197,7 +1197,7 @@
         "FY2027Q2",
         "derived"
       ],
-      "nextReport": "2026-10-28",
+      "nextReport": "2026-10-29",
       "status": "ok",
       "vsAj": 10.2
     },
