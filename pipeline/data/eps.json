@@ -1036,6 +1036,6 @@
     ]
   },
   "method": "accrual",
-  "builtAt": "2026-10-03T11:51:01.128Z",
+  "builtAt": "2026-10-04T00:19:57.037Z",
   "_comment": "DAILY NTM EPS. Built by build-eps-series.js as a 12-month window sliding across quarterly EPS (actuals behind, consensus ahead), so earnings accrue continuously and the corridor slopes. Names still on AJ keep his level and take only the shape of the consensus curve. Do not overwrite with a flat value."
 }
