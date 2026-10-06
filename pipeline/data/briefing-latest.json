@@ -1,6 +1,6 @@
 {
   "date": "2026-10-05",
-  "generatedAt": "2026-10-06T02:02:38.738Z",
+  "generatedAt": "2026-10-06T08:52:07.792Z",
   "maxChanges": 15,
   "changeCount": 4,
   "truncated": false,
@@ -181,6 +181,23 @@
           "EPS moves 85% (gate 25%)"
         ],
         "viaStandingApproval": true
+      },
+      {
+        "t": "MU",
+        "kind": "switch",
+        "from": 90,
+        "to": 166.5762,
+        "approx": true,
+        "quarters": 2,
+        "derived": 2,
+        "reportedPeriod": "2026-09-30",
+        "baseline": "2026-06-30",
+        "change": 0.8508466666666666,
+        "impliedPe": 6,
+        "overridden": [
+          "EPS moves 85% (gate 25%)"
+        ],
+        "viaStandingApproval": true
       }
     ],
     "held": []
@@ -201,6 +218,11 @@
   "reportsSoon": [
     {
       "t": "TSM",
+      "date": "2026-10-14",
+      "epsSource": "aj"
+    },
+    {
+      "t": "ASML",
       "date": "2026-10-14",
       "epsSource": "aj"
     }
@@ -476,6 +498,31 @@
       "med": 577.6104048,
       "epsSource": "aj",
       "nextReport": "2026-11-03",
+      "breached": false,
+      "zoneChanged": false,
+      "isChange": false,
+      "counted": false
+    },
+    {
+      "t": "ASML",
+      "n": "ASML",
+      "tier": "other",
+      "threshold": 4,
+      "mcapM": 573130,
+      "price": 1656.2,
+      "move": 0.19358741681790959,
+      "zone": "Fair Value",
+      "prevZone": "Fair Value",
+      "pos": 0.5393455100119836,
+      "prevPos": 0.5350129367122592,
+      "dPosPrice": 0.009888684316732226,
+      "dPosBands": -0.005556111017007863,
+      "dPosTotal": 0.004332573299724363,
+      "lo": 1481.6666064,
+      "hi": 1805.2688064000001,
+      "med": 1643.4677064000002,
+      "epsSource": "aj",
+      "nextReport": "2026-10-14",
       "breached": false,
       "zoneChanged": false,
       "isChange": false,
