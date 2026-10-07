@@ -1,6 +1,6 @@
 {
   "date": "2026-10-06",
-  "generatedAt": "2026-10-07T10:11:26.854Z",
+  "generatedAt": "2026-10-07T11:07:03.838Z",
   "maxChanges": 15,
   "changeCount": 2,
   "truncated": false,
@@ -109,6 +109,23 @@
   "quadrantMoves": [],
   "cutovers": {
     "applied": [
+      {
+        "t": "MU",
+        "kind": "switch",
+        "from": 90,
+        "to": 166.5762,
+        "approx": true,
+        "quarters": 2,
+        "derived": 2,
+        "reportedPeriod": "2026-09-30",
+        "baseline": "2026-06-30",
+        "change": 0.8508466666666666,
+        "impliedPe": 6,
+        "overridden": [
+          "EPS moves 85% (gate 25%)"
+        ],
+        "viaStandingApproval": true
+      },
       {
         "t": "MU",
         "kind": "switch",
