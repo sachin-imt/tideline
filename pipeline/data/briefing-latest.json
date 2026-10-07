@@ -1,6 +1,6 @@
 {
   "date": "2026-10-06",
-  "generatedAt": "2026-10-07T01:11:53.979Z",
+  "generatedAt": "2026-10-07T08:31:30.947Z",
   "maxChanges": 15,
   "changeCount": 2,
   "truncated": false,
@@ -95,11 +95,37 @@
       "dBands": -0.16288176917868216,
       "pos": 0.33189719831402503,
       "zone": "Attractive"
+    },
+    {
+      "t": "SNDK",
+      "move": -4.460900235329316,
+      "dTotal": -0.11240974310825352,
+      "dPrice": -0.07073255188340877,
+      "dBands": -0.041677191224844756,
+      "pos": 0.4503189493979353,
+      "zone": "Fair Value"
     }
   ],
   "quadrantMoves": [],
   "cutovers": {
     "applied": [
+      {
+        "t": "MU",
+        "kind": "switch",
+        "from": 90,
+        "to": 166.5762,
+        "approx": true,
+        "quarters": 2,
+        "derived": 2,
+        "reportedPeriod": "2026-09-30",
+        "baseline": "2026-06-30",
+        "change": 0.8508466666666666,
+        "impliedPe": 6,
+        "overridden": [
+          "EPS moves 85% (gate 25%)"
+        ],
+        "viaStandingApproval": true
+      },
       {
         "t": "MU",
         "kind": "switch",
@@ -208,11 +234,15 @@
   "lookbackSessions": 20,
   "deepValue": [
     "AVGO",
-    "MU"
+    "MU",
+    "UBER"
   ],
   "extreme": [
     "MSFT",
-    "TSM"
+    "META",
+    "TSM",
+    "PLTR",
+    "LITE"
   ],
   "reportsSoon": [
     {
@@ -381,6 +411,31 @@
       "zoneChanged": false,
       "isChange": true,
       "counted": true
+    },
+    {
+      "t": "META",
+      "n": "Meta",
+      "tier": "mega",
+      "threshold": 2,
+      "mcapM": 1562844,
+      "price": 738.88,
+      "move": -0.40706294648874264,
+      "zone": "Stretched",
+      "prevZone": "Stretched",
+      "pos": 1.6491525767140736,
+      "prevPos": 1.6809202951564874,
+      "dPosPrice": -0.027560190278327804,
+      "dPosBands": -0.00420752816408608,
+      "dPosTotal": -0.031767718442413884,
+      "lo": 558.1685923,
+      "hi": 667.7469358999999,
+      "med": 612.4579769,
+      "epsSource": "aj",
+      "nextReport": "2026-10-28",
+      "breached": false,
+      "zoneChanged": false,
+      "isChange": false,
+      "counted": false
     },
     {
       "t": "TSLA",
@@ -558,6 +613,31 @@
       "counted": false
     },
     {
+      "t": "PLTR",
+      "n": "Palantir",
+      "tier": "other",
+      "threshold": 4,
+      "mcapM": 409247,
+      "price": 192.07,
+      "move": 1.4097148891235414,
+      "zone": "Stretched",
+      "prevZone": "Stretched",
+      "pos": 1.155599706677219,
+      "prevPos": 1.1168501046229207,
+      "dPosPrice": 0.04082473012796838,
+      "dPosBands": -0.0020751280736700448,
+      "dPosTotal": 0.03874960205429834,
+      "lo": 116.49200579999999,
+      "hi": 181.8935404,
+      "med": 149.19403,
+      "epsSource": "aj",
+      "nextReport": "2026-11-02",
+      "breached": false,
+      "zoneChanged": false,
+      "isChange": false,
+      "counted": false
+    },
+    {
       "t": "AMAT",
       "n": "Appl. Materials",
       "tier": "other",
@@ -577,6 +657,31 @@
       "med": 569.663952,
       "epsSource": "aj",
       "nextReport": "2026-11-12",
+      "breached": false,
+      "zoneChanged": false,
+      "isChange": false,
+      "counted": false
+    },
+    {
+      "t": "SNDK",
+      "n": "SanDisk",
+      "tier": "other",
+      "threshold": 4,
+      "mcapM": 254475,
+      "price": 1660.46,
+      "move": -2.56431321002723,
+      "zone": "Fair Value",
+      "prevZone": "Fair Value",
+      "pos": 0.4503189493979353,
+      "prevPos": 0.4915842846014315,
+      "dPosPrice": -0.039868599475105994,
+      "dPosBands": -0.0013967357283901846,
+      "dPosTotal": -0.04126533520349618,
+      "lo": 1166.8650819999998,
+      "hi": 2262.9657872000002,
+      "med": 1714.9421179999997,
+      "epsSource": "aj",
+      "nextReport": "2026-10-29",
       "breached": false,
       "zoneChanged": false,
       "isChange": false,
@@ -606,6 +711,56 @@
       "zoneChanged": true,
       "isChange": true,
       "counted": true
+    },
+    {
+      "t": "UBER",
+      "n": "Uber",
+      "tier": "other",
+      "threshold": 4,
+      "mcapM": 149372,
+      "price": 69.08,
+      "move": -0.5757052389176823,
+      "zone": "Attractive",
+      "prevZone": "Attractive",
+      "pos": -0.18631666966023805,
+      "prevPos": -0.1415662746316497,
+      "dPosPrice": -0.04413126934328762,
+      "dPosBands": -0.000619125685300731,
+      "dPosTotal": -0.04475039502858835,
+      "lo": 70.7687497,
+      "hi": 79.8326177,
+      "med": 75.30068370000001,
+      "epsSource": "aj",
+      "nextReport": "2026-10-29",
+      "breached": false,
+      "zoneChanged": false,
+      "isChange": false,
+      "counted": false
+    },
+    {
+      "t": "LITE",
+      "n": "Lumentum",
+      "tier": "other",
+      "threshold": 4,
+      "mcapM": 87775,
+      "price": 1133.4,
+      "move": 3.822583747835886,
+      "zone": "Stretched",
+      "prevZone": "Stretched",
+      "pos": 1.1513109207688872,
+      "prevPos": 1.0090758803887987,
+      "dPosPrice": 0.14926051127716292,
+      "dPosBands": -0.007025470897074421,
+      "dPosTotal": 0.1422350403800885,
+      "lo": 811.51845,
+      "hi": 1091.09675,
+      "med": 950.7954625,
+      "epsSource": "aj",
+      "nextReport": "2026-11-05",
+      "breached": false,
+      "zoneChanged": false,
+      "isChange": false,
+      "counted": false
     },
     {
       "t": "COHR",
