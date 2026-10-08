@@ -1,6 +1,6 @@
 {
   "date": "2026-10-07",
-  "generatedAt": "2026-10-08T08:47:15.679Z",
+  "generatedAt": "2026-10-08T10:29:22.646Z",
   "maxChanges": 15,
   "changeCount": 5,
   "truncated": false,
@@ -159,23 +159,6 @@
   ],
   "cutovers": {
     "applied": [
-      {
-        "t": "MU",
-        "kind": "switch",
-        "from": 90,
-        "to": 166.5762,
-        "approx": true,
-        "quarters": 2,
-        "derived": 2,
-        "reportedPeriod": "2026-09-30",
-        "baseline": "2026-06-30",
-        "change": 0.8508466666666666,
-        "impliedPe": 6,
-        "overridden": [
-          "EPS moves 85% (gate 25%)"
-        ],
-        "viaStandingApproval": true
-      },
       {
         "t": "MU",
         "kind": "switch",
@@ -689,14 +672,14 @@
       "move": 0.5511111111111151,
       "zone": "Fair Value",
       "prevZone": "Fair Value",
-      "pos": 0.5808760544777368,
-      "prevPos": 0.5713206972112456,
-      "dPosPrice": 0.00950759117976234,
-      "dPosBands": 0.000047766086728920354,
-      "dPosTotal": 0.00955535726649126,
-      "lo": 75.2404628,
-      "hi": 140.4515124,
-      "med": 107.3439752,
+      "pos": 0.5806839531105639,
+      "prevPos": 0.571416232029925,
+      "dPosPrice": 0.009506538290373661,
+      "dPosBands": -0.00023881720973477003,
+      "dPosTotal": 0.009267721080638891,
+      "lo": 75.248796,
+      "hi": 140.467068,
+      "med": 107.35586400000001,
       "epsSource": "aj",
       "nextReport": "2026-10-22",
       "breached": false,
