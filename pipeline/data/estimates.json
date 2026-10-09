@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-09T08:50:27.202Z",
+  "fetchedAt": "2026-10-09T10:28:06.292Z",
   "source": "finnhub-free",
   "note": "Observational only. apply-estimates.js decides when a name switches off AJ.",
   "coverage": "21/22",
@@ -1097,15 +1097,21 @@
         }
       ],
       "symbol": "MSFT",
-      "consensusNtm": 19.8581,
-      "quarters": 3,
-      "derived": 1,
-      "step": 1.018,
+      "consensusNtm": 19.5909,
+      "quarters": 4,
+      "derived": 0,
+      "step": 1.012,
       "forward": [
         {
           "fy": 2027,
           "q": 1,
           "reportDate": "2026-10-27",
+          "eps": 4.8231
+        },
+        {
+          "fy": 2027,
+          "q": 1,
+          "reportDate": "2026-10-28",
           "eps": 4.8231
         },
         {
@@ -1121,16 +1127,16 @@
           "eps": 4.9996
         }
       ],
-      "approx": true,
+      "approx": false,
       "periods": [
         "FY2027Q1",
+        "FY2027Q1",
         "FY2027Q2",
-        "FY2027Q3",
-        "derived"
+        "FY2027Q3"
       ],
       "nextReport": "2026-10-27",
       "status": "ok",
-      "vsAj": 22.6
+      "vsAj": 20.9
     },
     "AAPL": {
       "ticker": "AAPL",

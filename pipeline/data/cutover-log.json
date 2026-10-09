@@ -743,6 +743,28 @@
           "viaStandingApproval": true
         }
       ]
+    },
+    {
+      "at": "2026-10-09T10:28:06.344Z",
+      "actions": [
+        {
+          "t": "MU",
+          "kind": "switch",
+          "from": 90,
+          "to": 166.5762,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.8508466666666666,
+          "impliedPe": 6,
+          "overridden": [
+            "EPS moves 85% (gate 25%)"
+          ],
+          "viaStandingApproval": true
+        }
+      ]
     }
   ]
 }
