@@ -1,8 +1,8 @@
 {
   "date": "2026-10-08",
-  "generatedAt": "2026-10-09T01:41:42.693Z",
+  "generatedAt": "2026-10-09T08:50:27.501Z",
   "maxChanges": 15,
-  "changeCount": 12,
+  "changeCount": 13,
   "truncated": false,
   "suppressed": [],
   "becameAttractive": [
@@ -111,7 +111,34 @@
       "cause": "price"
     }
   ],
-  "becameStretched": [],
+  "becameStretched": [
+    {
+      "t": "ASML",
+      "n": "ASML",
+      "tier": "other",
+      "threshold": 4,
+      "mcapM": 573130,
+      "price": 1630.6,
+      "move": 1.2669233635573136,
+      "zone": "Fair Value",
+      "prevZone": "Attractive",
+      "pos": 0.454767113088347,
+      "prevPos": 0.3935909643375922,
+      "dPosPrice": 0.06297194229547505,
+      "dPosBands": -0.0017957935447202727,
+      "dPosTotal": 0.06117614875075478,
+      "lo": 1483.2764656000002,
+      "hi": 1807.2302656000002,
+      "med": 1645.2533656,
+      "epsSource": "aj",
+      "nextReport": "2026-10-14",
+      "breached": false,
+      "zoneChanged": true,
+      "isChange": true,
+      "counted": true,
+      "cause": "price"
+    }
+  ],
   "movers": [
     {
       "t": "COHR",
@@ -880,24 +907,24 @@
       "tier": "other",
       "threshold": 4,
       "mcapM": 573130,
-      "price": 1601.2,
-      "move": -0.558936778039995,
-      "zone": "Attractive",
+      "price": 1630.6,
+      "move": 1.2669233635573136,
+      "zone": "Fair Value",
       "prevZone": "Attractive",
-      "pos": 0.36401343154486804,
+      "pos": 0.454767113088347,
       "prevPos": 0.3935909643375922,
-      "dPosPrice": -0.02778173924800388,
-      "dPosBands": -0.0017957935447203005,
-      "dPosTotal": -0.02957753279272418,
+      "dPosPrice": 0.06297194229547505,
+      "dPosBands": -0.0017957935447202727,
+      "dPosTotal": 0.06117614875075478,
       "lo": 1483.2764656000002,
       "hi": 1807.2302656000002,
       "med": 1645.2533656,
       "epsSource": "aj",
       "nextReport": "2026-10-14",
       "breached": false,
-      "zoneChanged": false,
-      "isChange": false,
-      "counted": false
+      "zoneChanged": true,
+      "isChange": true,
+      "counted": true
     },
     {
       "t": "INTC",
