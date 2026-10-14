@@ -1,11 +1,38 @@
 {
   "date": "2026-10-13",
-  "generatedAt": "2026-10-14T09:33:43.616Z",
+  "generatedAt": "2026-10-14T12:09:01.780Z",
   "maxChanges": 15,
   "changeCount": 5,
   "truncated": false,
   "suppressed": [],
-  "becameAttractive": [],
+  "becameAttractive": [
+    {
+      "t": "ASML",
+      "n": "ASML",
+      "tier": "other",
+      "threshold": 4,
+      "mcapM": 573130,
+      "price": 1509.6,
+      "move": -4.201040741210817,
+      "zone": "Attractive",
+      "prevZone": "Fair Value",
+      "pos": 0.38701173263229594,
+      "prevPos": 0.6086911649005681,
+      "dPosPrice": -0.21775828698568608,
+      "dPosBands": -0.003921145282586053,
+      "dPosTotal": -0.22167943226827214,
+      "lo": 1391.9458016,
+      "hi": 1695.9526016,
+      "med": 1543.9492016000002,
+      "epsSource": "cons",
+      "nextReport": "2026-10-14",
+      "breached": true,
+      "zoneChanged": true,
+      "isChange": true,
+      "counted": true,
+      "cause": "price"
+    }
+  ],
   "becameStretched": [],
   "movers": [
     {
@@ -67,19 +94,19 @@
       "price": 1509.6,
       "move": -4.201040741210817,
       "zone": "Attractive",
-      "prevZone": "Attractive",
-      "pos": 0.07284008134590413,
-      "prevPos": 0.27857218507935594,
-      "dPosPrice": -0.20398101928883974,
-      "dPosBands": -0.0017510844446120555,
-      "dPosTotal": -0.2057321037334518,
-      "lo": 1485.9604800000002,
-      "hi": 1810.5004800000002,
-      "med": 1648.2304800000002,
-      "epsSource": "aj",
+      "prevZone": "Fair Value",
+      "pos": 0.38701173263229594,
+      "prevPos": 0.6086911649005681,
+      "dPosPrice": -0.21775828698568608,
+      "dPosBands": -0.003921145282586053,
+      "dPosTotal": -0.22167943226827214,
+      "lo": 1391.9458016,
+      "hi": 1695.9526016,
+      "med": 1543.9492016000002,
+      "epsSource": "cons",
       "nextReport": "2026-10-14",
       "breached": true,
-      "zoneChanged": false,
+      "zoneChanged": true,
       "isChange": true,
       "counted": true
     },
@@ -145,15 +172,7 @@
       "zone": "Attractive"
     }
   ],
-  "quadrantMoves": [
-    {
-      "t": "ASML",
-      "from": "UE",
-      "to": "UI",
-      "fromLabel": "upside, but pricey",
-      "toLabel": "cheap, with upside"
-    }
-  ],
+  "quadrantMoves": [],
   "cutovers": {
     "applied": [
       {
@@ -308,6 +327,36 @@
           "EPS moves 85% (gate 25%)"
         ],
         "viaStandingApproval": true
+      },
+      {
+        "t": "MU",
+        "kind": "switch",
+        "from": 90,
+        "to": 166.5762,
+        "approx": true,
+        "quarters": 2,
+        "derived": 2,
+        "reportedPeriod": "2026-09-30",
+        "baseline": "2026-06-30",
+        "change": 0.8508466666666666,
+        "impliedPe": 6,
+        "overridden": [
+          "EPS moves 85% (gate 25%)"
+        ],
+        "viaStandingApproval": true
+      },
+      {
+        "t": "ASML",
+        "kind": "switch",
+        "from": 53,
+        "to": 50.17,
+        "approx": true,
+        "quarters": 3,
+        "derived": 1,
+        "reportedPeriod": "2026-09-30",
+        "baseline": "2026-06-30",
+        "change": 0.053396226415094304,
+        "impliedPe": 30
       }
     ],
     "held": []
@@ -332,7 +381,7 @@
     {
       "t": "ASML",
       "date": "2026-10-14",
-      "epsSource": "aj"
+      "epsSource": "cons"
     },
     {
       "t": "TSLA",
@@ -635,19 +684,19 @@
       "price": 1509.6,
       "move": -4.201040741210817,
       "zone": "Attractive",
-      "prevZone": "Attractive",
-      "pos": 0.07284008134590413,
-      "prevPos": 0.27857218507935594,
-      "dPosPrice": -0.20398101928883974,
-      "dPosBands": -0.0017510844446120555,
-      "dPosTotal": -0.2057321037334518,
-      "lo": 1485.9604800000002,
-      "hi": 1810.5004800000002,
-      "med": 1648.2304800000002,
-      "epsSource": "aj",
+      "prevZone": "Fair Value",
+      "pos": 0.38701173263229594,
+      "prevPos": 0.6086911649005681,
+      "dPosPrice": -0.21775828698568608,
+      "dPosBands": -0.003921145282586053,
+      "dPosTotal": -0.22167943226827214,
+      "lo": 1391.9458016,
+      "hi": 1695.9526016,
+      "med": 1543.9492016000002,
+      "epsSource": "cons",
       "nextReport": "2026-10-14",
       "breached": true,
-      "zoneChanged": false,
+      "zoneChanged": true,
       "isChange": true,
       "counted": true
     },

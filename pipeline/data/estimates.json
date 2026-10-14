@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-14T09:33:43.349Z",
+  "fetchedAt": "2026-10-14T12:09:01.433Z",
   "source": "finnhub-free",
   "note": "Observational only. apply-estimates.js decides when a name switches off AJ.",
   "coverage": "21/22",
@@ -763,9 +763,14 @@
     "ASML": {
       "ticker": "ASML",
       "ajEps": 53,
-      "lastReport": "2026-06-30",
-      "lastActual": 7.58,
+      "lastReport": "2026-09-30",
+      "lastActual": 13.302726,
       "history": [
+        {
+          "period": "2026-09-30",
+          "actual": 13.302726,
+          "est": 10.8209
+        },
         {
           "period": "2026-06-30",
           "actual": 7.58,
@@ -780,11 +785,6 @@
           "period": "2025-12-31",
           "actual": 7.34,
           "est": 7.7108
-        },
-        {
-          "period": "2025-09-30",
-          "actual": 5.48,
-          "est": 5.56
         }
       ],
       "symbol": "ASML",
