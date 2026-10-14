@@ -1,6 +1,6 @@
 {
   "date": "2026-10-13",
-  "generatedAt": "2026-10-13T14:25:19.696Z",
+  "generatedAt": "2026-10-14T00:50:16.599Z",
   "maxChanges": 15,
   "changeCount": 3,
   "truncated": false,
@@ -199,6 +199,23 @@
           "EPS moves 85% (gate 25%)"
         ],
         "viaStandingApproval": true
+      },
+      {
+        "t": "MU",
+        "kind": "switch",
+        "from": 90,
+        "to": 166.5762,
+        "approx": true,
+        "quarters": 2,
+        "derived": 2,
+        "reportedPeriod": "2026-09-30",
+        "baseline": "2026-06-30",
+        "change": 0.8508466666666666,
+        "impliedPe": 6,
+        "overridden": [
+          "EPS moves 85% (gate 25%)"
+        ],
+        "viaStandingApproval": true
       }
     ],
     "held": []
@@ -217,6 +234,11 @@
   "reportsSoon": [
     {
       "t": "TSM",
+      "date": "2026-10-14",
+      "epsSource": "aj"
+    },
+    {
+      "t": "ASML",
       "date": "2026-10-14",
       "epsSource": "aj"
     },
@@ -508,6 +530,31 @@
       "counted": false
     },
     {
+      "t": "ASML",
+      "n": "ASML",
+      "tier": "other",
+      "threshold": 4,
+      "mcapM": 573130,
+      "price": 1530.4,
+      "move": -2.8810762787155646,
+      "zone": "Attractive",
+      "prevZone": "Attractive",
+      "pos": 0.13693079435508693,
+      "prevPos": 0.27857218507935594,
+      "dPosPrice": -0.13989030627965696,
+      "dPosBands": -0.0017510844446120555,
+      "dPosTotal": -0.141641390724269,
+      "lo": 1485.9604800000002,
+      "hi": 1810.5004800000002,
+      "med": 1648.2304800000002,
+      "epsSource": "aj",
+      "nextReport": "2026-10-14",
+      "breached": false,
+      "zoneChanged": false,
+      "isChange": false,
+      "counted": false
+    },
+    {
       "t": "INTC",
       "n": "Intel",
       "tier": "other",
@@ -576,7 +623,7 @@
       "hi": 182.83419440000003,
       "med": 149.96558000000002,
       "epsSource": "aj",
-      "nextReport": "2026-11-09",
+      "nextReport": "2026-11-02",
       "breached": false,
       "zoneChanged": false,
       "isChange": false,

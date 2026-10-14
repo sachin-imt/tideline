@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-13T14:25:19.415Z",
+  "fetchedAt": "2026-10-14T00:50:16.363Z",
   "source": "finnhub-free",
   "note": "Observational only. apply-estimates.js decides when a name switches off AJ.",
   "coverage": "21/22",
@@ -664,7 +664,7 @@
         {
           "fy": 2026,
           "q": 3,
-          "reportDate": "2026-11-09",
+          "reportDate": "2026-11-02",
           "eps": 0.424
         },
         {
@@ -687,7 +687,7 @@
         "FY2027Q1",
         "derived"
       ],
-      "nextReport": "2026-11-09",
+      "nextReport": "2026-11-02",
       "status": "ok",
       "vsAj": -21.8
     },
