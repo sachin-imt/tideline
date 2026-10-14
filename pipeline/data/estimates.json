@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-14T08:38:36.041Z",
+  "fetchedAt": "2026-10-14T09:33:43.349Z",
   "source": "finnhub-free",
   "note": "Observational only. apply-estimates.js decides when a name switches off AJ.",
   "coverage": "21/22",
@@ -278,11 +278,17 @@
         }
       ],
       "symbol": "META",
-      "consensusNtm": 31.6389,
-      "quarters": 3,
-      "derived": 1,
-      "step": 1.095,
+      "consensusNtm": 29.5806,
+      "quarters": 4,
+      "derived": 0,
+      "step": 1.062,
       "forward": [
+        {
+          "fy": 2026,
+          "q": 3,
+          "reportDate": "2026-10-21",
+          "eps": 6.6125
+        },
         {
           "fy": 2026,
           "q": 3,
@@ -302,16 +308,16 @@
           "eps": 7.9219
         }
       ],
-      "approx": true,
+      "approx": false,
       "periods": [
         "FY2026Q3",
+        "FY2026Q3",
         "FY2026Q4",
-        "FY2027Q1",
-        "derived"
+        "FY2027Q1"
       ],
-      "nextReport": "2026-10-28",
+      "nextReport": "2026-10-21",
       "status": "ok",
-      "vsAj": 3.7
+      "vsAj": -3
     },
     "NVDA": {
       "ticker": "NVDA",
