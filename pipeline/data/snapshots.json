@@ -1,6 +1,5 @@
 {
   "dates": [
-    "Sep 16",
     "Sep 17",
     "Sep 18",
     "Sep 21",
@@ -19,7 +18,8 @@
     "Oct 8",
     "Oct 9",
     "Oct 12",
-    "Oct 13"
+    "Oct 13",
+    "Oct 14"
   ],
   "snapshots": {
     "MU": [
@@ -113,7 +113,6 @@
     "META": [
       "UI",
       "UI",
-      "UI",
       "DI",
       "DI",
       "DI",
@@ -125,12 +124,13 @@
       "UI",
       "UI",
       "DI",
+      "UI",
+      "UI",
+      "UI",
+      "UI",
+      "UI",
       "DI",
-      "UI",
-      "UI",
-      "UI",
-      "DI",
-      "DI"
+      "UI"
     ],
     "NVDA": [
       "UI",
@@ -397,7 +397,7 @@
       "UI"
     ],
     "MSFT": [
-      "UE",
+      "DE",
       "DE",
       "DE",
       "DE",
@@ -507,5 +507,5 @@
       "UI"
     ]
   },
-  "lastUpdated": "2026-10-15T00:16:38.102Z"
+  "lastUpdated": "2026-10-15T07:17:39.683Z"
 }

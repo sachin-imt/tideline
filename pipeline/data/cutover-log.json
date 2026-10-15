@@ -1231,6 +1231,41 @@
           "impliedPe": 31.4
         }
       ]
+    },
+    {
+      "at": "2026-10-15T07:17:39.549Z",
+      "actions": [
+        {
+          "t": "MU",
+          "kind": "switch",
+          "from": 90,
+          "to": 166.5762,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.8508466666666666,
+          "impliedPe": 6,
+          "overridden": [
+            "EPS moves 85% (gate 25%)"
+          ],
+          "viaStandingApproval": true
+        },
+        {
+          "t": "ASML",
+          "kind": "switch",
+          "from": 53,
+          "to": 47.8817,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.09657169811320751,
+          "impliedPe": 31.4
+        }
+      ]
     }
   ]
 }
