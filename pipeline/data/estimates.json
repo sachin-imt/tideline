@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-14T12:09:01.433Z",
+  "fetchedAt": "2026-10-15T00:16:37.920Z",
   "source": "finnhub-free",
   "note": "Observational only. apply-estimates.js decides when a name switches off AJ.",
   "coverage": "21/22",
@@ -278,21 +278,15 @@
         }
       ],
       "symbol": "META",
-      "consensusNtm": 29.5806,
-      "quarters": 4,
-      "derived": 0,
-      "step": 1.062,
+      "consensusNtm": 31.6389,
+      "quarters": 3,
+      "derived": 1,
+      "step": 1.095,
       "forward": [
         {
           "fy": 2026,
           "q": 3,
           "reportDate": "2026-10-21",
-          "eps": 6.6125
-        },
-        {
-          "fy": 2026,
-          "q": 3,
-          "reportDate": "2026-10-28",
           "eps": 6.6125
         },
         {
@@ -308,16 +302,16 @@
           "eps": 7.9219
         }
       ],
-      "approx": false,
+      "approx": true,
       "periods": [
         "FY2026Q3",
-        "FY2026Q3",
         "FY2026Q4",
-        "FY2027Q1"
+        "FY2027Q1",
+        "derived"
       ],
       "nextReport": "2026-10-21",
       "status": "ok",
-      "vsAj": -3
+      "vsAj": 3.7
     },
     "NVDA": {
       "ticker": "NVDA",
@@ -599,17 +593,11 @@
         }
       ],
       "symbol": "TSM",
-      "consensusNtm": 127.1068,
-      "quarters": 3,
-      "derived": 1,
-      "step": 1.056,
+      "consensusNtm": 130.4446,
+      "quarters": 2,
+      "derived": 2,
+      "step": 1.019,
       "forward": [
-        {
-          "fy": 2026,
-          "q": 3,
-          "reportDate": "2026-10-14",
-          "eps": 28.9726
-        },
         {
           "fy": 2026,
           "q": 4,
@@ -625,14 +613,14 @@
       ],
       "approx": true,
       "periods": [
-        "FY2026Q3",
         "FY2026Q4",
         "FY2027Q1",
+        "derived",
         "derived"
       ],
-      "nextReport": "2026-10-14",
+      "nextReport": "2027-01-13",
       "status": "ok",
-      "vsAj": 464.9
+      "vsAj": 479.8
     },
     "PLTR": {
       "ticker": "PLTR",
@@ -788,17 +776,11 @@
         }
       ],
       "symbol": "ASML",
-      "consensusNtm": 50.17,
-      "quarters": 3,
-      "derived": 1,
-      "step": 1.072,
+      "consensusNtm": 47.8817,
+      "quarters": 2,
+      "derived": 2,
+      "step": 0.917,
       "forward": [
-        {
-          "fy": 2026,
-          "q": 3,
-          "reportDate": "2026-10-14",
-          "eps": 10.8209
-        },
         {
           "fy": 2026,
           "q": 4,
@@ -814,14 +796,14 @@
       ],
       "approx": true,
       "periods": [
-        "FY2026Q3",
         "FY2026Q4",
         "FY2027Q1",
+        "derived",
         "derived"
       ],
-      "nextReport": "2026-10-14",
+      "nextReport": "2027-01-27",
       "status": "ok",
-      "vsAj": -5.3
+      "vsAj": -9.7
     },
     "INTC": {
       "ticker": "INTC",
