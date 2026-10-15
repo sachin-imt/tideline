@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-15T09:11:40.864Z",
+  "fetchedAt": "2026-10-15T11:45:29.254Z",
   "source": "finnhub-free",
   "note": "Observational only. apply-estimates.js decides when a name switches off AJ.",
   "coverage": "21/22",
@@ -574,9 +574,14 @@
     "TSM": {
       "ticker": "TSM",
       "ajEps": 22.5,
-      "lastReport": "2026-06-30",
-      "lastActual": 27.25,
+      "lastReport": "2026-09-30",
+      "lastActual": 148.94339999999997,
       "history": [
+        {
+          "period": "2026-09-30",
+          "actual": 148.94339999999997,
+          "est": 29.241
+        },
         {
           "period": "2026-06-30",
           "actual": 27.25,
@@ -591,11 +596,6 @@
           "period": "2025-12-31",
           "actual": 19.51,
           "est": 18.5437
-        },
-        {
-          "period": "2025-09-30",
-          "actual": 17.44,
-          "est": 16.1535
         }
       ],
       "symbol": "TSM",
