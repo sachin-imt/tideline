@@ -1500,6 +1500,47 @@
           "impliedPe": 30.5
         }
       ]
+    },
+    {
+      "at": "2026-10-16T09:04:04.681Z",
+      "actions": [
+        {
+          "t": "MU",
+          "kind": "switch",
+          "from": 90,
+          "to": 182.6218,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 1.0291311111111112,
+          "impliedPe": 5.5,
+          "overridden": [
+            "EPS moves 103% (gate 25%)"
+          ],
+          "viaStandingApproval": true
+        },
+        {
+          "t": "TSM",
+          "kind": "retire",
+          "reason": "consensus EPS is TWD against a USD ADR price; retire rather than convert",
+          "reportedPeriod": "2026-09-30"
+        },
+        {
+          "t": "ASML",
+          "kind": "switch",
+          "from": 53,
+          "to": 49.2524,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.07070943396226412,
+          "impliedPe": 30.5
+        }
+      ]
     }
   ]
 }
