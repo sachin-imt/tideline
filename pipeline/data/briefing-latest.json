@@ -1,6 +1,6 @@
 {
   "date": "2026-10-16",
-  "generatedAt": "2026-10-17T10:59:06.401Z",
+  "generatedAt": "2026-10-17T23:43:30.666Z",
   "maxChanges": 15,
   "changeCount": 14,
   "truncated": false,
@@ -440,16 +440,16 @@
         "t": "MU",
         "kind": "switch",
         "from": 90,
-        "to": 166.5762,
+        "to": 182.6218,
         "approx": true,
         "quarters": 2,
         "derived": 2,
         "reportedPeriod": "2026-09-30",
         "baseline": "2026-06-30",
-        "change": 0.8508466666666666,
-        "impliedPe": 6,
+        "change": 1.0291311111111112,
+        "impliedPe": 5.5,
         "overridden": [
-          "EPS moves 85% (gate 25%)"
+          "EPS moves 103% (gate 25%)"
         ],
         "viaStandingApproval": true
       },
@@ -464,14 +464,14 @@
         "t": "ASML",
         "kind": "switch",
         "from": 53,
-        "to": 47.8817,
+        "to": 49.2524,
         "approx": true,
         "quarters": 2,
         "derived": 2,
         "reportedPeriod": "2026-09-30",
         "baseline": "2026-06-30",
-        "change": 0.09657169811320751,
-        "impliedPe": 31.4
+        "change": 0.07070943396226412,
+        "impliedPe": 30.5
       },
       {
         "t": "MU",
