@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-17T08:36:38.290Z",
+  "fetchedAt": "2026-10-17T10:59:06.049Z",
   "source": "finnhub-free",
   "note": "Observational only. apply-estimates.js decides when a name switches off AJ.",
   "coverage": "21/22",
@@ -1211,15 +1211,21 @@
         }
       ],
       "symbol": "GOOGL",
-      "consensusNtm": 13.7058,
-      "quarters": 3,
-      "derived": 1,
-      "step": 1.059,
+      "consensusNtm": 13.1217,
+      "quarters": 4,
+      "derived": 0,
+      "step": 1.039,
       "forward": [
         {
           "fy": 2026,
           "q": 3,
           "reportDate": "2026-10-27",
+          "eps": 3.0983
+        },
+        {
+          "fy": 2026,
+          "q": 3,
+          "reportDate": "2026-10-28",
           "eps": 3.0983
         },
         {
@@ -1235,16 +1241,16 @@
           "eps": 3.4764
         }
       ],
-      "approx": true,
+      "approx": false,
       "periods": [
         "FY2026Q3",
+        "FY2026Q3",
         "FY2026Q4",
-        "FY2027Q1",
-        "derived"
+        "FY2027Q1"
       ],
       "nextReport": "2026-10-27",
       "status": "ok",
-      "vsAj": 19.2
+      "vsAj": 14.1
     },
     "XPEV": {
       "ticker": "XPEV",
