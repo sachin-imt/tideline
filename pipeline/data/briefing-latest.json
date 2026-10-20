@@ -1,6 +1,6 @@
 {
   "date": "2026-10-19",
-  "generatedAt": "2026-10-20T08:27:36.878Z",
+  "generatedAt": "2026-10-20T09:28:20.066Z",
   "maxChanges": 15,
   "changeCount": 6,
   "truncated": false,
@@ -223,6 +223,43 @@
         "impliedPe": 5.5,
         "overridden": [
           "EPS moves 103% (gate 25%)"
+        ],
+        "viaStandingApproval": true
+      },
+      {
+        "t": "TSM",
+        "kind": "retire",
+        "reason": "consensus EPS is TWD against a USD ADR price; retire rather than convert",
+        "reportedPeriod": "2026-09-30",
+        "retired": true
+      },
+      {
+        "t": "ASML",
+        "kind": "switch",
+        "from": 53,
+        "to": 49.2524,
+        "approx": true,
+        "quarters": 2,
+        "derived": 2,
+        "reportedPeriod": "2026-09-30",
+        "baseline": "2026-06-30",
+        "change": 0.07070943396226412,
+        "impliedPe": 30.5
+      },
+      {
+        "t": "MU",
+        "kind": "switch",
+        "from": 90,
+        "to": 172.8048,
+        "approx": true,
+        "quarters": 2,
+        "derived": 2,
+        "reportedPeriod": "2026-09-30",
+        "baseline": "2026-06-30",
+        "change": 0.9200533333333334,
+        "impliedPe": 5.8,
+        "overridden": [
+          "EPS moves 92% (gate 25%)"
         ],
         "viaStandingApproval": true
       },
@@ -668,6 +705,31 @@
       "med": 597.0325328,
       "epsSource": "aj",
       "nextReport": "2026-11-03",
+      "breached": false,
+      "zoneChanged": false,
+      "isChange": false,
+      "counted": false
+    },
+    {
+      "t": "ASML",
+      "n": "ASML",
+      "tier": "other",
+      "threshold": 4,
+      "mcapM": 573130,
+      "price": 1496,
+      "move": 1.272678039534251,
+      "zone": "Fair Value",
+      "prevZone": "Fair Value",
+      "pos": 0.6138197776810552,
+      "prevPos": 0.5278504687887822,
+      "dPosPrice": 0.06525317189420918,
+      "dPosBands": 0.020716136998063878,
+      "dPosTotal": 0.08596930889227306,
+      "lo": 1319.1532432,
+      "hi": 1607.2618432,
+      "med": 1463.2075432,
+      "epsSource": "cons",
+      "nextReport": "2027-01-27",
       "breached": false,
       "zoneChanged": false,
       "isChange": false,
