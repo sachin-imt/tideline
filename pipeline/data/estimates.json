@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-18T23:52:52.948Z",
+  "fetchedAt": "2026-10-20T00:53:48.893Z",
   "source": "finnhub-free",
   "note": "Observational only. apply-estimates.js decides when a name switches off AJ.",
   "coverage": "21/22",
@@ -21,27 +21,27 @@
           "est": 21.4019
         },
         {
-          "period": "2026-03-31",
-          "actual": 12.2,
-          "est": 9.5849
-        },
-        {
           "period": "2025-12-31",
           "actual": 4.78,
           "est": 4.072
+        },
+        {
+          "period": "2025-09-30",
+          "actual": 3.03,
+          "est": 2.9461
         }
       ],
       "symbol": "MU",
-      "consensusNtm": 182.6218,
+      "consensusNtm": 172.8048,
       "quarters": 2,
       "derived": 2,
-      "step": 1.101,
+      "step": 0.997,
       "forward": [
         {
           "fy": 2027,
           "q": 1,
           "reportDate": "2026-12-15",
-          "eps": 39.2978
+          "eps": 43.3867
         },
         {
           "fy": 2027,
@@ -59,7 +59,7 @@
       ],
       "nextReport": "2026-12-15",
       "status": "ok",
-      "vsAj": 102.9
+      "vsAj": 92
     },
     "SNDK": {
       "ticker": "SNDK",
@@ -204,14 +204,14 @@
           "est": 2.0018
         },
         {
-          "period": "2026-03-31",
-          "actual": 1.79,
-          "est": 1.7365
+          "period": "2025-09-30",
+          "actual": 1.47,
+          "est": 1.5099
         },
         {
-          "period": "2025-12-31",
-          "actual": 2.26,
-          "est": 1.6711
+          "period": "2025-06-30",
+          "actual": 1.7,
+          "est": 1.6769
         }
       ],
       "symbol": "ORCL",
@@ -278,22 +278,22 @@
         }
       ],
       "symbol": "META",
-      "consensusNtm": 31.5585,
+      "consensusNtm": 31.4818,
       "quarters": 3,
       "derived": 1,
-      "step": 1.12,
+      "step": 1.149,
       "forward": [
         {
           "fy": 2026,
           "q": 3,
           "reportDate": "2026-10-21",
-          "eps": 6.3122
+          "eps": 6.0031
         },
         {
           "fy": 2026,
           "q": 4,
           "reportDate": "2027-01-26",
-          "eps": 8.4497
+          "eps": 8.4565
         },
         {
           "fy": 2027,
@@ -311,7 +311,7 @@
       ],
       "nextReport": "2026-10-21",
       "status": "ok",
-      "vsAj": 3.5
+      "vsAj": 3.2
     },
     "NVDA": {
       "ticker": "NVDA",
@@ -325,19 +325,19 @@
           "est": 2.1384
         },
         {
+          "period": "2026-09-30",
+          "actual": 2.22,
+          "est": 2.1384
+        },
+        {
           "period": "2026-06-30",
           "actual": 1.87,
           "est": 1.7922
         },
         {
-          "period": "2026-03-31",
-          "actual": 1.62,
-          "est": 1.5634
-        },
-        {
-          "period": "2025-12-31",
-          "actual": 1.3,
-          "est": 1.2746
+          "period": "2026-06-30",
+          "actual": 1.87,
+          "est": 1.7922
         }
       ],
       "symbol": "NVDA",
@@ -404,22 +404,22 @@
         }
       ],
       "symbol": "UBER",
-      "consensusNtm": 4.1472,
+      "consensusNtm": 4.1456,
       "quarters": 3,
       "derived": 1,
-      "step": 1.021,
+      "step": 1.022,
       "forward": [
         {
           "fy": 2026,
           "q": 3,
           "reportDate": "2026-11-04",
-          "eps": 0.9862
+          "eps": 0.9838
         },
         {
           "fy": 2026,
           "q": 4,
           "reportDate": "2027-02-02",
-          "eps": 1.0837
+          "eps": 1.0832
         },
         {
           "fy": 2027,
@@ -437,7 +437,7 @@
       ],
       "nextReport": "2026-11-04",
       "status": "ok",
-      "vsAj": 12.4
+      "vsAj": 12.3
     },
     "TSLA": {
       "ticker": "TSLA",
@@ -467,22 +467,22 @@
         }
       ],
       "symbol": "TSLA",
-      "consensusNtm": 1.8429,
+      "consensusNtm": 1.8212,
       "quarters": 3,
       "derived": 1,
-      "step": 1.008,
+      "step": 1.02,
       "forward": [
         {
           "fy": 2026,
           "q": 3,
           "reportDate": "2026-10-21",
-          "eps": 0.4459
+          "eps": 0.4358
         },
         {
           "fy": 2026,
           "q": 4,
           "reportDate": "2027-01-26",
-          "eps": 0.4862
+          "eps": 0.4693
         },
         {
           "fy": 2027,
@@ -500,7 +500,7 @@
       ],
       "nextReport": "2026-10-21",
       "status": "ok",
-      "vsAj": -61.6
+      "vsAj": -62.1
     },
     "AMZN": {
       "ticker": "AMZN",
@@ -530,22 +530,22 @@
         }
       ],
       "symbol": "AMZN",
-      "consensusNtm": 9.4657,
+      "consensusNtm": 9.4663,
       "quarters": 3,
       "derived": 1,
-      "step": 1.09,
+      "step": 1.091,
       "forward": [
         {
           "fy": 2026,
           "q": 3,
           "reportDate": "2026-10-29",
-          "eps": 1.9998
+          "eps": 1.9986
         },
         {
           "fy": 2026,
           "q": 4,
           "reportDate": "2027-02-03",
-          "eps": 2.4974
+          "eps": 2.4984
         },
         {
           "fy": 2027,
@@ -713,7 +713,7 @@
         }
       ],
       "symbol": "AMD",
-      "consensusNtm": 11.4678,
+      "consensusNtm": 11.4686,
       "quarters": 3,
       "derived": 1,
       "step": 1.244,
@@ -722,13 +722,13 @@
           "fy": 2026,
           "q": 3,
           "reportDate": "2026-11-03",
-          "eps": 1.9652
+          "eps": 1.9664
         },
         {
           "fy": 2026,
           "q": 4,
           "reportDate": "2027-02-01",
-          "eps": 2.6721
+          "eps": 2.6729
         },
         {
           "fy": 2027,
@@ -833,22 +833,22 @@
         }
       ],
       "symbol": "INTC",
-      "consensusNtm": 1.653,
+      "consensusNtm": 1.6554,
       "quarters": 3,
       "derived": 1,
-      "step": 1.011,
+      "step": 1.009,
       "forward": [
         {
           "fy": 2026,
           "q": 3,
           "reportDate": "2026-10-29",
-          "eps": 0.398
+          "eps": 0.3996
         },
         {
           "fy": 2026,
           "q": 4,
           "reportDate": "2027-01-20",
-          "eps": 0.4369
+          "eps": 0.4386
         },
         {
           "fy": 2027,
@@ -866,7 +866,7 @@
       ],
       "nextReport": "2026-10-29",
       "status": "ok",
-      "vsAj": -54.1
+      "vsAj": -54
     },
     "MRVL": {
       "ticker": "MRVL",
@@ -880,19 +880,19 @@
           "est": 0.9422
         },
         {
+          "period": "2026-09-30",
+          "actual": 0.94,
+          "est": 0.9422
+        },
+        {
           "period": "2026-06-30",
           "actual": 0.8,
           "est": 0.8076
         },
         {
-          "period": "2026-03-31",
+          "period": "2026-06-30",
           "actual": 0.8,
-          "est": 0.8033
-        },
-        {
-          "period": "2025-12-31",
-          "actual": 0.76,
-          "est": 0.7495
+          "est": 0.8076
         }
       ],
       "symbol": "MRVL",
@@ -959,7 +959,7 @@
         }
       ],
       "symbol": "AMAT",
-      "consensusNtm": 17.9947,
+      "consensusNtm": 18.0045,
       "quarters": 3,
       "derived": 1,
       "step": 1.058,
@@ -974,7 +974,7 @@
           "fy": 2027,
           "q": 1,
           "reportDate": "2027-02-10",
-          "eps": 4.3363
+          "eps": 4.3461
         },
         {
           "fy": 2027,
@@ -1022,7 +1022,7 @@
         }
       ],
       "symbol": "AVGO",
-      "consensusNtm": 17.4486,
+      "consensusNtm": 17.4444,
       "quarters": 3,
       "derived": 1,
       "step": 1.077,
@@ -1031,13 +1031,13 @@
           "fy": 2026,
           "q": 4,
           "reportDate": "2026-12-09",
-          "eps": 3.8995
+          "eps": 3.9001
         },
         {
           "fy": 2027,
           "q": 1,
           "reportDate": "2027-03-02",
-          "eps": 4.1607
+          "eps": 4.1562
         },
         {
           "fy": 2027,
@@ -1055,7 +1055,7 @@
       ],
       "nextReport": "2026-12-09",
       "status": "ok",
-      "vsAj": 1.2
+      "vsAj": 1.1
     },
     "MSFT": {
       "ticker": "MSFT",
@@ -1074,14 +1074,14 @@
           "est": 4.1432
         },
         {
-          "period": "2025-12-31",
-          "actual": 4.14,
-          "est": 4.0345
+          "period": "2025-06-30",
+          "actual": 3.65,
+          "est": 3.4368
         },
         {
-          "period": "2025-09-30",
-          "actual": 4.13,
-          "est": 3.7391
+          "period": "2025-03-31",
+          "actual": 3.46,
+          "est": 3.2846
         }
       ],
       "symbol": "MSFT",
@@ -1148,7 +1148,7 @@
         }
       ],
       "symbol": "AAPL",
-      "consensusNtm": 9.6903,
+      "consensusNtm": 9.69,
       "quarters": 3,
       "derived": 1,
       "step": 1.063,
@@ -1163,7 +1163,7 @@
           "fy": 2027,
           "q": 1,
           "reportDate": "2027-01-27",
-          "eps": 2.9499
+          "eps": 2.9496
         },
         {
           "fy": 2027,
@@ -1211,22 +1211,22 @@
         }
       ],
       "symbol": "GOOGL",
-      "consensusNtm": 13.7058,
+      "consensusNtm": 13.7156,
       "quarters": 3,
       "derived": 1,
-      "step": 1.059,
+      "step": 1.058,
       "forward": [
         {
           "fy": 2026,
           "q": 3,
           "reportDate": "2026-10-28",
-          "eps": 3.0983
+          "eps": 3.1053
         },
         {
           "fy": 2026,
           "q": 4,
           "reportDate": "2027-02-02",
-          "eps": 3.4487
+          "eps": 3.4556
         },
         {
           "fy": 2027,
@@ -1244,7 +1244,7 @@
       ],
       "nextReport": "2026-10-28",
       "status": "ok",
-      "vsAj": 19.2
+      "vsAj": 19.3
     },
     "XPEV": {
       "ticker": "XPEV",
@@ -1293,14 +1293,14 @@
           "est": 1.4251
         },
         {
-          "period": "2025-12-31",
-          "actual": 1.29,
-          "est": 1.2318
+          "period": "2025-06-30",
+          "actual": 1,
+          "est": 0.9322
         },
         {
-          "period": "2025-09-30",
-          "actual": 1.16,
-          "est": 1.0623
+          "period": "2025-03-31",
+          "actual": 0.91,
+          "est": 0.8734
         }
       ],
       "symbol": "COHR",
