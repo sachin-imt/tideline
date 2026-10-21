@@ -1,6 +1,6 @@
 {
   "date": "2026-10-20",
-  "generatedAt": "2026-10-21T09:24:15.149Z",
+  "generatedAt": "2026-10-21T12:04:50.515Z",
   "maxChanges": 15,
   "changeCount": 0,
   "truncated": false,
@@ -22,6 +22,43 @@
   "quadrantMoves": [],
   "cutovers": {
     "applied": [
+      {
+        "t": "MU",
+        "kind": "switch",
+        "from": 90,
+        "to": 172.8048,
+        "approx": true,
+        "quarters": 2,
+        "derived": 2,
+        "reportedPeriod": "2026-09-30",
+        "baseline": "2026-06-30",
+        "change": 0.9200533333333334,
+        "impliedPe": 5.8,
+        "overridden": [
+          "EPS moves 92% (gate 25%)"
+        ],
+        "viaStandingApproval": true
+      },
+      {
+        "t": "TSM",
+        "kind": "retire",
+        "reason": "consensus EPS is TWD against a USD ADR price; retire rather than convert",
+        "reportedPeriod": "2026-09-30",
+        "retired": true
+      },
+      {
+        "t": "ASML",
+        "kind": "switch",
+        "from": 53,
+        "to": 49.2524,
+        "approx": true,
+        "quarters": 2,
+        "derived": 2,
+        "reportedPeriod": "2026-09-30",
+        "baseline": "2026-06-30",
+        "change": 0.07070943396226412,
+        "impliedPe": 30.5
+      },
       {
         "t": "MU",
         "kind": "switch",
