@@ -1,6 +1,6 @@
 {
   "date": "2026-10-20",
-  "generatedAt": "2026-10-21T12:04:50.515Z",
+  "generatedAt": "2026-10-22T00:23:31.137Z",
   "maxChanges": 15,
   "changeCount": 0,
   "truncated": false,
@@ -8,17 +8,7 @@
   "becameAttractive": [],
   "becameStretched": [],
   "movers": [],
-  "creeping": [
-    {
-      "t": "META",
-      "move": -5.7493890849850695,
-      "dTotal": -0.5907364057435776,
-      "dPrice": -0.37592345797174004,
-      "dBands": -0.21481294777183751,
-      "pos": 1.068784867677429,
-      "zone": "Stretched"
-    }
-  ],
+  "creeping": [],
   "quadrantMoves": [],
   "cutovers": {
     "applied": [
@@ -391,9 +381,76 @@
         "baseline": "2026-06-30",
         "change": 0.07070943396226412,
         "impliedPe": 30.5
+      },
+      {
+        "t": "MU",
+        "kind": "switch",
+        "from": 90,
+        "to": 172.8048,
+        "approx": true,
+        "quarters": 2,
+        "derived": 2,
+        "reportedPeriod": "2026-09-30",
+        "baseline": "2026-06-30",
+        "change": 0.9200533333333334,
+        "impliedPe": 5.8,
+        "overridden": [
+          "EPS moves 92% (gate 25%)"
+        ],
+        "viaStandingApproval": true
+      },
+      {
+        "t": "META",
+        "kind": "switch",
+        "from": 30.5,
+        "to": 30.7514,
+        "approx": true,
+        "quarters": 2,
+        "derived": 2,
+        "reportedPeriod": "2026-09-30",
+        "baseline": "2026-06-30",
+        "change": 0.008242622950819681,
+        "impliedPe": 19.9
+      },
+      {
+        "t": "TSM",
+        "kind": "retire",
+        "reason": "consensus EPS is TWD against a USD ADR price; retire rather than convert",
+        "reportedPeriod": "2026-09-30",
+        "retired": true
+      },
+      {
+        "t": "ASML",
+        "kind": "switch",
+        "from": 53,
+        "to": 49.2524,
+        "approx": true,
+        "quarters": 2,
+        "derived": 2,
+        "reportedPeriod": "2026-09-30",
+        "baseline": "2026-06-30",
+        "change": 0.07070943396226412,
+        "impliedPe": 30.5
       }
     ],
-    "held": []
+    "held": [
+      {
+        "t": "TSLA",
+        "kind": "held",
+        "from": 4.8,
+        "to": 1.7845,
+        "approx": true,
+        "quarters": 2,
+        "derived": 2,
+        "reportedPeriod": "2026-09-30",
+        "baseline": "2026-06-30",
+        "change": 0.6282291666666666,
+        "impliedPe": 206.3,
+        "reasons": [
+          "EPS moves 63% (gate 25%)"
+        ]
+      }
+    ]
   },
   "lookbackSessions": 20,
   "deepValue": [
@@ -412,16 +469,6 @@
     "PLTR"
   ],
   "reportsSoon": [
-    {
-      "t": "META",
-      "date": "2026-10-21",
-      "epsSource": "aj"
-    },
-    {
-      "t": "TSLA",
-      "date": "2026-10-21",
-      "epsSource": "aj"
-    },
     {
       "t": "GOOGL",
       "date": "2026-10-28",
@@ -624,16 +671,16 @@
       "move": -1.5862440462690026,
       "zone": "Stretched",
       "prevZone": "Stretched",
-      "pos": 1.068784867677429,
-      "prevPos": 1.174789633246619,
-      "dPosPrice": -0.0993290081394047,
-      "dPosBands": -0.006675757429785323,
-      "dPosTotal": -0.10600476556919003,
-      "lo": 573.845066,
-      "hi": 686.5009779999999,
-      "med": 629.659198,
-      "epsSource": "aj",
-      "nextReport": "2026-10-21",
+      "pos": 1.4325131336110632,
+      "prevPos": 1.533028166228207,
+      "dPosPrice": -0.10519162145708193,
+      "dPosBands": 0.004676588839938142,
+      "dPosTotal": -0.10051503261714378,
+      "lo": 541.8631298,
+      "hi": 648.2404233999999,
+      "med": 594.5665894,
+      "epsSource": "cons",
+      "nextReport": "2027-01-26",
       "breached": false,
       "zoneChanged": false,
       "isChange": false,
@@ -649,16 +696,16 @@
       "move": 1.5350758028582234,
       "zone": "Fair Value",
       "prevZone": "Fair Value",
-      "pos": 0.5068808333056181,
-      "prevPos": 0.4660551072313428,
-      "dPosPrice": 0.04099161954778533,
-      "dPosBands": -0.00016589347351007172,
-      "dPosTotal": 0.04082572607427526,
-      "lo": 303.8450681,
-      "hi": 441.67811939999996,
-      "med": 372.2569319,
+      "pos": 0.5645624689814606,
+      "prevPos": 0.5217187058487538,
+      "dPosPrice": 0.041863689445750356,
+      "dPosBands": 0.0009800736869564133,
+      "dPosTotal": 0.04284376313270677,
+      "lo": 297.5156179,
+      "hi": 432.47744459999996,
+      "med": 364.5023821,
       "epsSource": "aj",
-      "nextReport": "2026-10-21",
+      "nextReport": "2027-01-26",
       "breached": false,
       "zoneChanged": false,
       "isChange": false,

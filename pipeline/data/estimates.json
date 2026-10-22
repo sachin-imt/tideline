@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-21T12:04:50.188Z",
+  "fetchedAt": "2026-10-22T00:23:30.904Z",
   "source": "finnhub-free",
   "note": "Observational only. apply-estimates.js decides when a name switches off AJ.",
   "coverage": "21/22",
@@ -253,9 +253,14 @@
     "META": {
       "ticker": "META",
       "ajEps": 30.5,
-      "lastReport": "2026-06-30",
-      "lastActual": 6.18,
+      "lastReport": "2026-09-30",
+      "lastActual": 7.4,
       "history": [
+        {
+          "period": "2026-09-30",
+          "actual": 7.4,
+          "est": 6.0031
+        },
         {
           "period": "2026-06-30",
           "actual": 6.18,
@@ -270,25 +275,14 @@
           "period": "2025-12-31",
           "actual": 8.88,
           "est": 8.3992
-        },
-        {
-          "period": "2025-09-30",
-          "actual": 7.25,
-          "est": 6.8245
         }
       ],
       "symbol": "META",
-      "consensusNtm": 31.4818,
-      "quarters": 3,
-      "derived": 1,
-      "step": 1.149,
+      "consensusNtm": 30.7514,
+      "quarters": 2,
+      "derived": 2,
+      "step": 0.937,
       "forward": [
-        {
-          "fy": 2026,
-          "q": 3,
-          "reportDate": "2026-10-21",
-          "eps": 6.0031
-        },
         {
           "fy": 2026,
           "q": 4,
@@ -304,14 +298,14 @@
       ],
       "approx": true,
       "periods": [
-        "FY2026Q3",
         "FY2026Q4",
         "FY2027Q1",
+        "derived",
         "derived"
       ],
-      "nextReport": "2026-10-21",
+      "nextReport": "2027-01-26",
       "status": "ok",
-      "vsAj": 3.2
+      "vsAj": 0.8
     },
     "NVDA": {
       "ticker": "NVDA",
@@ -442,9 +436,14 @@
     "TSLA": {
       "ticker": "TSLA",
       "ajEps": 4.8,
-      "lastReport": "2026-06-30",
-      "lastActual": 0.33,
+      "lastReport": "2026-09-30",
+      "lastActual": 0.48,
       "history": [
+        {
+          "period": "2026-09-30",
+          "actual": 0.48,
+          "est": 0.4358
+        },
         {
           "period": "2026-06-30",
           "actual": 0.33,
@@ -459,25 +458,14 @@
           "period": "2025-12-31",
           "actual": 0.5,
           "est": 0.4541
-        },
-        {
-          "period": "2025-09-30",
-          "actual": 0.5,
-          "est": 0.5586
         }
       ],
       "symbol": "TSLA",
-      "consensusNtm": 1.8212,
-      "quarters": 3,
-      "derived": 1,
-      "step": 1.02,
+      "consensusNtm": 1.7845,
+      "quarters": 2,
+      "derived": 2,
+      "step": 0.966,
       "forward": [
-        {
-          "fy": 2026,
-          "q": 3,
-          "reportDate": "2026-10-21",
-          "eps": 0.4358
-        },
         {
           "fy": 2026,
           "q": 4,
@@ -493,14 +481,14 @@
       ],
       "approx": true,
       "periods": [
-        "FY2026Q3",
         "FY2026Q4",
         "FY2027Q1",
+        "derived",
         "derived"
       ],
-      "nextReport": "2026-10-21",
+      "nextReport": "2027-01-26",
       "status": "ok",
-      "vsAj": -62.1
+      "vsAj": -62.8
     },
     "AMZN": {
       "ticker": "AMZN",
