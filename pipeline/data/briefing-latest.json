@@ -1,6 +1,6 @@
 {
   "date": "2026-10-21",
-  "generatedAt": "2026-10-22T07:26:21.735Z",
+  "generatedAt": "2026-10-22T08:32:42.132Z",
   "maxChanges": 15,
   "changeCount": 3,
   "truncated": false,
@@ -420,6 +420,19 @@
         "viaStandingApproval": true
       },
       {
+        "t": "META",
+        "kind": "switch",
+        "from": 30.5,
+        "to": 30.7514,
+        "approx": true,
+        "quarters": 2,
+        "derived": 2,
+        "reportedPeriod": "2026-09-30",
+        "baseline": "2026-06-30",
+        "change": 0.008242622950819681,
+        "impliedPe": 19.9
+      },
+      {
         "t": "TSM",
         "kind": "retire",
         "reason": "consensus EPS is TWD against a USD ADR price; retire rather than convert",
@@ -541,6 +554,22 @@
       }
     ],
     "held": [
+      {
+        "t": "TSLA",
+        "kind": "held",
+        "from": 4.8,
+        "to": 1.7845,
+        "approx": true,
+        "quarters": 2,
+        "derived": 2,
+        "reportedPeriod": "2026-09-30",
+        "baseline": "2026-06-30",
+        "change": 0.6282291666666666,
+        "impliedPe": 206.3,
+        "reasons": [
+          "EPS moves 63% (gate 25%)"
+        ]
+      },
       {
         "t": "TSLA",
         "kind": "held",
