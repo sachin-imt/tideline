@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-22T00:23:30.904Z",
+  "fetchedAt": "2026-10-22T07:26:21.386Z",
   "source": "finnhub-free",
   "note": "Observational only. apply-estimates.js decides when a name switches off AJ.",
   "coverage": "21/22",
@@ -259,7 +259,7 @@
         {
           "period": "2026-09-30",
           "actual": 7.4,
-          "est": 6.0031
+          "est": 5.7889
         },
         {
           "period": "2026-06-30",
@@ -518,16 +518,16 @@
         }
       ],
       "symbol": "AMZN",
-      "consensusNtm": 9.4663,
+      "consensusNtm": 9.4671,
       "quarters": 3,
       "derived": 1,
-      "step": 1.091,
+      "step": 1.09,
       "forward": [
         {
           "fy": 2026,
           "q": 3,
           "reportDate": "2026-10-29",
-          "eps": 1.9986
+          "eps": 2.001
         },
         {
           "fy": 2026,
@@ -1073,16 +1073,16 @@
         }
       ],
       "symbol": "MSFT",
-      "consensusNtm": 19.8608,
+      "consensusNtm": 19.8582,
       "quarters": 3,
       "derived": 1,
-      "step": 1.018,
+      "step": 1.019,
       "forward": [
         {
           "fy": 2027,
           "q": 1,
           "reportDate": "2026-10-28",
-          "eps": 4.8214
+          "eps": 4.8159
         },
         {
           "fy": 2027,
@@ -1199,16 +1199,16 @@
         }
       ],
       "symbol": "GOOGL",
-      "consensusNtm": 13.7156,
+      "consensusNtm": 13.7176,
       "quarters": 3,
       "derived": 1,
-      "step": 1.058,
+      "step": 1.057,
       "forward": [
         {
           "fy": 2026,
           "q": 3,
           "reportDate": "2026-10-28",
-          "eps": 3.1053
+          "eps": 3.1103
         },
         {
           "fy": 2026,
