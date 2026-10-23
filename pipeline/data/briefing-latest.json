@@ -1,11 +1,43 @@
 {
   "date": "2026-10-22",
-  "generatedAt": "2026-10-23T08:28:55.447Z",
+  "generatedAt": "2026-10-23T09:23:25.903Z",
   "maxChanges": 15,
   "changeCount": 15,
-  "truncated": false,
-  "suppressed": [],
+  "truncated": true,
+  "suppressed": [
+    {
+      "t": "COHR",
+      "move": -12.50789373973814,
+      "mcapM": 59118
+    }
+  ],
   "becameAttractive": [
+    {
+      "t": "ASML",
+      "n": "ASML",
+      "tier": "other",
+      "threshold": 4,
+      "mcapM": 573130,
+      "price": 1419.6,
+      "move": -4.967197750702908,
+      "zone": "Attractive",
+      "prevZone": "Fair Value",
+      "pos": 0.3687228848480791,
+      "prevPos": 0.6202588840790646,
+      "dPosPrice": -0.25859136709100755,
+      "dPosBands": 0.007055367860022033,
+      "dPosTotal": -0.2515359992309855,
+      "lo": 1313.7989504,
+      "hi": 1600.7381504,
+      "med": 1457.2685504,
+      "epsSource": "cons",
+      "nextReport": "2027-01-27",
+      "breached": true,
+      "zoneChanged": true,
+      "isChange": true,
+      "counted": true,
+      "cause": "price"
+    },
     {
       "t": "MRVL",
       "n": "Marvell",
@@ -35,31 +67,6 @@
   ],
   "becameStretched": [],
   "movers": [
-    {
-      "t": "COHR",
-      "n": "Coherent",
-      "tier": "other",
-      "threshold": 4,
-      "mcapM": 59118,
-      "price": 207.82,
-      "move": -12.50789373973814,
-      "zone": "Attractive",
-      "prevZone": "Attractive",
-      "pos": -0.2800331756444379,
-      "prevPos": -0.12476249683604908,
-      "dPosPrice": -0.15368501548742,
-      "dPosBands": -0.0015856633209688498,
-      "dPosTotal": -0.15527067880838885,
-      "lo": 261.955308,
-      "hi": 455.27278859999996,
-      "med": 358.0863312,
-      "epsSource": "aj",
-      "nextReport": "2026-11-04",
-      "breached": true,
-      "zoneChanged": false,
-      "isChange": true,
-      "counted": true
-    },
     {
       "t": "LITE",
       "n": "Lumentum",
@@ -261,6 +268,31 @@
       "counted": true
     },
     {
+      "t": "ASML",
+      "n": "ASML",
+      "tier": "other",
+      "threshold": 4,
+      "mcapM": 573130,
+      "price": 1419.6,
+      "move": -4.967197750702908,
+      "zone": "Attractive",
+      "prevZone": "Fair Value",
+      "pos": 0.3687228848480791,
+      "prevPos": 0.6202588840790646,
+      "dPosPrice": -0.25859136709100755,
+      "dPosBands": 0.007055367860022033,
+      "dPosTotal": -0.2515359992309855,
+      "lo": 1313.7989504,
+      "hi": 1600.7381504,
+      "med": 1457.2685504,
+      "epsSource": "cons",
+      "nextReport": "2027-01-27",
+      "breached": true,
+      "zoneChanged": true,
+      "isChange": true,
+      "counted": true
+    },
+    {
       "t": "AMZN",
       "n": "Amazon",
       "tier": "mega",
@@ -422,6 +454,15 @@
       "zone": "Attractive"
     },
     {
+      "t": "ASML",
+      "move": -5.561468866418316,
+      "dTotal": -0.12008348792402934,
+      "dPrice": -0.29135092033434307,
+      "dBands": 0.17126743241031372,
+      "pos": 0.3687228848480791,
+      "zone": "Attractive"
+    },
+    {
       "t": "AMZN",
       "move": 0.40099446627636537,
       "dTotal": -0.09623271333256382,
@@ -526,43 +567,6 @@
         "viaStandingApproval": true
       },
       {
-        "t": "TSM",
-        "kind": "retire",
-        "reason": "consensus EPS is TWD against a USD ADR price; retire rather than convert",
-        "reportedPeriod": "2026-09-30",
-        "retired": true
-      },
-      {
-        "t": "ASML",
-        "kind": "switch",
-        "from": 53,
-        "to": 49.2524,
-        "approx": true,
-        "quarters": 2,
-        "derived": 2,
-        "reportedPeriod": "2026-09-30",
-        "baseline": "2026-06-30",
-        "change": 0.07070943396226412,
-        "impliedPe": 30.5
-      },
-      {
-        "t": "MU",
-        "kind": "switch",
-        "from": 90,
-        "to": 172.8048,
-        "approx": true,
-        "quarters": 2,
-        "derived": 2,
-        "reportedPeriod": "2026-09-30",
-        "baseline": "2026-06-30",
-        "change": 0.9200533333333334,
-        "impliedPe": 5.8,
-        "overridden": [
-          "EPS moves 92% (gate 25%)"
-        ],
-        "viaStandingApproval": true
-      },
-      {
         "t": "META",
         "kind": "switch",
         "from": 30.5,
@@ -774,6 +778,56 @@
         "baseline": "2026-06-30",
         "change": 0.008242622950819681,
         "impliedPe": 19.9
+      },
+      {
+        "t": "TSM",
+        "kind": "retire",
+        "reason": "consensus EPS is TWD against a USD ADR price; retire rather than convert",
+        "reportedPeriod": "2026-09-30",
+        "retired": true
+      },
+      {
+        "t": "ASML",
+        "kind": "switch",
+        "from": 53,
+        "to": 49.2524,
+        "approx": true,
+        "quarters": 2,
+        "derived": 2,
+        "reportedPeriod": "2026-09-30",
+        "baseline": "2026-06-30",
+        "change": 0.07070943396226412,
+        "impliedPe": 30.5
+      },
+      {
+        "t": "MU",
+        "kind": "switch",
+        "from": 90,
+        "to": 183.2606,
+        "approx": true,
+        "quarters": 2,
+        "derived": 2,
+        "reportedPeriod": "2026-09-30",
+        "baseline": "2026-06-30",
+        "change": 1.036228888888889,
+        "impliedPe": 5.5,
+        "overridden": [
+          "EPS moves 104% (gate 25%)"
+        ],
+        "viaStandingApproval": true
+      },
+      {
+        "t": "META",
+        "kind": "switch",
+        "from": 30.5,
+        "to": 31.081,
+        "approx": true,
+        "quarters": 2,
+        "derived": 2,
+        "reportedPeriod": "2026-09-30",
+        "baseline": "2026-06-30",
+        "change": 0.019049180327868835,
+        "impliedPe": 19.7
       },
       {
         "t": "TSM",
@@ -1025,6 +1079,22 @@
         "impliedPe": 206.3,
         "reasons": [
           "EPS moves 63% (gate 25%)"
+        ]
+      },
+      {
+        "t": "TSLA",
+        "kind": "held",
+        "from": 4.8,
+        "to": 1.842,
+        "approx": true,
+        "quarters": 2,
+        "derived": 2,
+        "reportedPeriod": "2026-09-30",
+        "baseline": "2026-06-30",
+        "change": 0.61625,
+        "impliedPe": 199.9,
+        "reasons": [
+          "EPS moves 62% (gate 25%)"
         ]
       },
       {
@@ -1409,24 +1479,24 @@
       "tier": "other",
       "threshold": 4,
       "mcapM": 573130,
-      "price": 1454.4,
-      "move": -2.6375686169500514,
-      "zone": "Fair Value",
+      "price": 1419.6,
+      "move": -4.967197750702908,
+      "zone": "Attractive",
       "prevZone": "Fair Value",
-      "pos": 0.4900029330255333,
+      "pos": 0.3687228848480791,
       "prevPos": 0.6202588840790646,
-      "dPosPrice": -0.13731131891355333,
-      "dPosBands": 0.00705536786002206,
-      "dPosTotal": -0.13025595105353127,
+      "dPosPrice": -0.25859136709100755,
+      "dPosBands": 0.007055367860022033,
+      "dPosTotal": -0.2515359992309855,
       "lo": 1313.7989504,
       "hi": 1600.7381504,
       "med": 1457.2685504,
       "epsSource": "cons",
       "nextReport": "2027-01-27",
-      "breached": false,
-      "zoneChanged": false,
-      "isChange": false,
-      "counted": false
+      "breached": true,
+      "zoneChanged": true,
+      "isChange": true,
+      "counted": true
     },
     {
       "t": "INTC",
@@ -1651,7 +1721,7 @@
       "breached": true,
       "zoneChanged": false,
       "isChange": true,
-      "counted": true
+      "counted": false
     }
   ]
 }
