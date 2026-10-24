@@ -1,6 +1,6 @@
 {
   "date": "2026-10-23",
-  "generatedAt": "2026-10-24T07:08:46.359Z",
+  "generatedAt": "2026-10-24T08:03:53.180Z",
   "maxChanges": 15,
   "changeCount": 1,
   "truncated": false,
@@ -219,16 +219,16 @@
         "t": "MU",
         "kind": "switch",
         "from": 90,
-        "to": 172.8048,
+        "to": 183.2606,
         "approx": true,
         "quarters": 2,
         "derived": 2,
         "reportedPeriod": "2026-09-30",
         "baseline": "2026-06-30",
-        "change": 0.9200533333333334,
-        "impliedPe": 5.8,
+        "change": 1.036228888888889,
+        "impliedPe": 5.5,
         "overridden": [
-          "EPS moves 92% (gate 25%)"
+          "EPS moves 104% (gate 25%)"
         ],
         "viaStandingApproval": true
       },
@@ -236,14 +236,14 @@
         "t": "META",
         "kind": "switch",
         "from": 30.5,
-        "to": 30.7514,
+        "to": 31.081,
         "approx": true,
         "quarters": 2,
         "derived": 2,
         "reportedPeriod": "2026-09-30",
         "baseline": "2026-06-30",
-        "change": 0.008242622950819681,
-        "impliedPe": 19.9
+        "change": 0.019049180327868835,
+        "impliedPe": 19.7
       },
       {
         "t": "TSM",
@@ -669,16 +669,16 @@
         "t": "TSLA",
         "kind": "held",
         "from": 4.8,
-        "to": 1.7845,
+        "to": 1.842,
         "approx": true,
         "quarters": 2,
         "derived": 2,
         "reportedPeriod": "2026-09-30",
         "baseline": "2026-06-30",
-        "change": 0.6282291666666666,
-        "impliedPe": 206.3,
+        "change": 0.61625,
+        "impliedPe": 199.9,
         "reasons": [
-          "EPS moves 63% (gate 25%)"
+          "EPS moves 62% (gate 25%)"
         ]
       },
       {
