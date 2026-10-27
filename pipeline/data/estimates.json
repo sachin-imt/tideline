@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-25T23:44:35.421Z",
+  "fetchedAt": "2026-10-27T01:04:19.124Z",
   "source": "finnhub-free",
   "note": "Observational only. apply-estimates.js decides when a name switches off AJ.",
   "coverage": "21/22",
@@ -21,9 +21,9 @@
           "est": 21.4019
         },
         {
-          "period": "2026-06-30",
-          "actual": 25.11,
-          "est": 21.4019
+          "period": "2026-03-31",
+          "actual": 12.2,
+          "est": 9.5849
         },
         {
           "period": "2025-12-31",
@@ -199,32 +199,32 @@
           "est": 1.7738
         },
         {
-          "period": "2026-09-30",
-          "actual": 1.92,
-          "est": 1.7738
-        },
-        {
           "period": "2026-06-30",
           "actual": 2.03,
           "est": 2.0018
         },
         {
-          "period": "2026-06-30",
-          "actual": 2.03,
-          "est": 2.0018
+          "period": "2026-03-31",
+          "actual": 1.79,
+          "est": 1.7365
+        },
+        {
+          "period": "2025-12-31",
+          "actual": 2.26,
+          "est": 1.6711
         }
       ],
       "symbol": "ORCL",
-      "consensusNtm": 8.8973,
+      "consensusNtm": 8.8979,
       "quarters": 3,
       "derived": 1,
-      "step": 1.1,
+      "step": 1.099,
       "forward": [
         {
           "fy": 2027,
           "q": 2,
           "reportDate": "2026-12-08",
-          "eps": 1.9304
+          "eps": 1.9322
         },
         {
           "fy": 2027,
@@ -278,16 +278,16 @@
         }
       ],
       "symbol": "META",
-      "consensusNtm": 31.081,
+      "consensusNtm": 30.9939,
       "quarters": 2,
       "derived": 2,
-      "step": 0.943,
+      "step": 0.937,
       "forward": [
         {
           "fy": 2026,
           "q": 4,
           "reportDate": "2027-01-26",
-          "eps": 8.4662
+          "eps": 8.5226
         },
         {
           "fy": 2027,
@@ -305,7 +305,7 @@
       ],
       "nextReport": "2027-01-26",
       "status": "ok",
-      "vsAj": 1.9
+      "vsAj": 1.6
     },
     "NVDA": {
       "ticker": "NVDA",
@@ -324,14 +324,14 @@
           "est": 1.7922
         },
         {
-          "period": "2026-06-30",
-          "actual": 1.87,
-          "est": 1.7922
-        },
-        {
           "period": "2026-03-31",
           "actual": 1.62,
           "est": 1.5634
+        },
+        {
+          "period": "2025-12-31",
+          "actual": 1.3,
+          "est": 1.2746
         }
       ],
       "symbol": "NVDA",
@@ -343,7 +343,7 @@
         {
           "fy": 2027,
           "q": 3,
-          "reportDate": "2026-11-17",
+          "reportDate": "2026-11-25",
           "eps": 2.5263
         },
         {
@@ -366,7 +366,7 @@
         "FY2028Q1",
         "derived"
       ],
-      "nextReport": "2026-11-17",
+      "nextReport": "2026-11-25",
       "status": "ok",
       "vsAj": -24.1
     },
@@ -461,16 +461,16 @@
         }
       ],
       "symbol": "TSLA",
-      "consensusNtm": 1.842,
+      "consensusNtm": 1.8492,
       "quarters": 2,
       "derived": 2,
-      "step": 0.996,
+      "step": 1.004,
       "forward": [
         {
           "fy": 2026,
           "q": 4,
           "reportDate": "2027-01-26",
-          "eps": 0.4632
+          "eps": 0.4596
         },
         {
           "fy": 2027,
@@ -488,7 +488,7 @@
       ],
       "nextReport": "2027-01-26",
       "status": "ok",
-      "vsAj": -61.6
+      "vsAj": -61.5
     },
     "AMZN": {
       "ticker": "AMZN",
@@ -508,8 +508,8 @@
         },
         {
           "period": "2025-12-31",
-          "actual": 1.61,
-          "est": 1.6703
+          "actual": 1.95,
+          "est": 2.011
         },
         {
           "period": "2025-09-30",
@@ -638,16 +638,16 @@
         }
       ],
       "symbol": "PLTR",
-      "consensusNtm": 1.9224,
+      "consensusNtm": 1.9222,
       "quarters": 3,
       "derived": 1,
-      "step": 1.079,
+      "step": 1.08,
       "forward": [
         {
           "fy": 2026,
           "q": 3,
           "reportDate": "2026-11-02",
-          "eps": 0.4231
+          "eps": 0.4225
         },
         {
           "fy": 2026,
@@ -868,19 +868,19 @@
           "est": 0.9422
         },
         {
-          "period": "2026-09-30",
-          "actual": 0.94,
-          "est": 0.9422
-        },
-        {
           "period": "2026-06-30",
           "actual": 0.8,
           "est": 0.8076
         },
         {
-          "period": "2026-06-30",
+          "period": "2026-03-31",
           "actual": 0.8,
-          "est": 0.8076
+          "est": 0.8033
+        },
+        {
+          "period": "2025-12-31",
+          "actual": 0.76,
+          "est": 0.7495
         }
       ],
       "symbol": "MRVL",
@@ -892,7 +892,7 @@
         {
           "fy": 2027,
           "q": 3,
-          "reportDate": "2026-11-30",
+          "reportDate": "2026-11-26",
           "eps": 1.1138
         },
         {
@@ -915,7 +915,7 @@
         "FY2028Q1",
         "derived"
       ],
-      "nextReport": "2026-11-30",
+      "nextReport": "2026-11-26",
       "status": "ok",
       "vsAj": -7.8
     },
@@ -1057,23 +1057,23 @@
           "est": 4.3274
         },
         {
-          "period": "2026-06-30",
-          "actual": 4.74,
-          "est": 4.3274
-        },
-        {
           "period": "2026-03-31",
           "actual": 4.27,
           "est": 4.1432
         },
         {
-          "period": "2026-03-31",
-          "actual": 4.27,
-          "est": 4.1432
+          "period": "2025-12-31",
+          "actual": 4.14,
+          "est": 4.0345
+        },
+        {
+          "period": "2025-09-30",
+          "actual": 4.13,
+          "est": 3.7391
         }
       ],
       "symbol": "MSFT",
-      "consensusNtm": 19.8455,
+      "consensusNtm": 19.8457,
       "quarters": 3,
       "derived": 1,
       "step": 1.019,
@@ -1082,7 +1082,7 @@
           "fy": 2027,
           "q": 1,
           "reportDate": "2026-10-28",
-          "eps": 4.8159
+          "eps": 4.8165
         },
         {
           "fy": 2027,
@@ -1199,7 +1199,7 @@
         }
       ],
       "symbol": "GOOGL",
-      "consensusNtm": 13.7212,
+      "consensusNtm": 13.7209,
       "quarters": 3,
       "derived": 1,
       "step": 1.057,
@@ -1208,7 +1208,7 @@
           "fy": 2026,
           "q": 3,
           "reportDate": "2026-10-28",
-          "eps": 3.1103
+          "eps": 3.1095
         },
         {
           "fy": 2026,
@@ -1276,19 +1276,19 @@
           "est": 1.6471
         },
         {
-          "period": "2026-06-30",
-          "actual": 1.74,
-          "est": 1.6471
-        },
-        {
           "period": "2026-03-31",
           "actual": 1.41,
           "est": 1.4251
         },
         {
-          "period": "2026-03-31",
-          "actual": 1.41,
-          "est": 1.4251
+          "period": "2025-12-31",
+          "actual": 1.29,
+          "est": 1.2318
+        },
+        {
+          "period": "2025-09-30",
+          "actual": 1.16,
+          "est": 1.0623
         }
       ],
       "symbol": "COHR",
