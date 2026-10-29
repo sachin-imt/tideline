@@ -4457,6 +4457,102 @@
           "impliedPe": 24.3
         }
       ]
+    },
+    {
+      "at": "2026-10-29T10:56:08.405Z",
+      "actions": [
+        {
+          "t": "MU",
+          "kind": "switch",
+          "from": 90,
+          "to": 183.2606,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 1.036228888888889,
+          "impliedPe": 5.5,
+          "overridden": [
+            "EPS moves 104% (gate 25%)"
+          ],
+          "viaStandingApproval": true
+        },
+        {
+          "t": "META",
+          "kind": "switch",
+          "from": 30.5,
+          "to": 30.9939,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.01619344262295082,
+          "impliedPe": 19.8
+        },
+        {
+          "t": "TSLA",
+          "kind": "held",
+          "from": 4.8,
+          "to": 1.8492,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.61475,
+          "impliedPe": 199.1,
+          "reasons": [
+            "EPS moves 61% (gate 25%)"
+          ]
+        },
+        {
+          "t": "TSM",
+          "kind": "retire",
+          "reason": "consensus EPS is TWD against a USD ADR price; retire rather than convert",
+          "reportedPeriod": "2026-09-30"
+        },
+        {
+          "t": "ASML",
+          "kind": "switch",
+          "from": 53,
+          "to": 49.2524,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.07070943396226412,
+          "impliedPe": 30.5
+        },
+        {
+          "t": "MSFT",
+          "kind": "switch",
+          "from": 16.2,
+          "to": 20.1291,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.24253703703703716,
+          "impliedPe": 24.5
+        },
+        {
+          "t": "GOOGL",
+          "kind": "switch",
+          "from": 11.5,
+          "to": 13.9403,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.21220000000000006,
+          "impliedPe": 24.3
+        }
+      ]
     }
   ]
 }
