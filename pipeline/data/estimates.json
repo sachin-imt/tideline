@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-28T13:15:23.842Z",
+  "fetchedAt": "2026-10-29T01:29:56.141Z",
   "source": "finnhub-free",
   "note": "Observational only. apply-estimates.js decides when a name switches off AJ.",
   "coverage": "21/22",
@@ -343,7 +343,7 @@
         {
           "fy": 2027,
           "q": 3,
-          "reportDate": "2026-11-25",
+          "reportDate": "2026-11-17",
           "eps": 2.5263
         },
         {
@@ -366,7 +366,7 @@
         "FY2028Q1",
         "derived"
       ],
-      "nextReport": "2026-11-25",
+      "nextReport": "2026-11-17",
       "status": "ok",
       "vsAj": -24.1
     },
@@ -1048,9 +1048,14 @@
     "MSFT": {
       "ticker": "MSFT",
       "ajEps": 16.2,
-      "lastReport": "2026-06-30",
-      "lastActual": 4.74,
+      "lastReport": "2026-09-30",
+      "lastActual": 4.89,
       "history": [
+        {
+          "period": "2026-09-30",
+          "actual": 4.89,
+          "est": 4.8165
+        },
         {
           "period": "2026-06-30",
           "actual": 4.74,
@@ -1065,25 +1070,14 @@
           "period": "2025-12-31",
           "actual": 4.14,
           "est": 4.0345
-        },
-        {
-          "period": "2025-09-30",
-          "actual": 4.13,
-          "est": 3.7391
         }
       ],
       "symbol": "MSFT",
-      "consensusNtm": 19.8457,
-      "quarters": 3,
-      "derived": 1,
-      "step": 1.019,
+      "consensusNtm": 20.1291,
+      "quarters": 2,
+      "derived": 2,
+      "step": 1.013,
       "forward": [
-        {
-          "fy": 2027,
-          "q": 1,
-          "reportDate": "2026-10-28",
-          "eps": 4.8165
-        },
         {
           "fy": 2027,
           "q": 2,
@@ -1099,14 +1093,14 @@
       ],
       "approx": true,
       "periods": [
-        "FY2027Q1",
         "FY2027Q2",
         "FY2027Q3",
+        "derived",
         "derived"
       ],
-      "nextReport": "2026-10-28",
+      "nextReport": "2027-01-26",
       "status": "ok",
-      "vsAj": 22.5
+      "vsAj": 24.3
     },
     "AAPL": {
       "ticker": "AAPL",
@@ -1174,9 +1168,14 @@
     "GOOGL": {
       "ticker": "GOOGL",
       "ajEps": 11.5,
-      "lastReport": "2026-06-30",
-      "lastActual": 2.85,
+      "lastReport": "2026-09-30",
+      "lastActual": 2.12,
       "history": [
+        {
+          "period": "2026-09-30",
+          "actual": 2.12,
+          "est": 3.1095
+        },
         {
           "period": "2026-06-30",
           "actual": 2.85,
@@ -1191,25 +1190,14 @@
           "period": "2025-12-31",
           "actual": 2.82,
           "est": 2.7063
-        },
-        {
-          "period": "2025-09-30",
-          "actual": 3.1,
-          "est": 2.3954
         }
       ],
       "symbol": "GOOGL",
-      "consensusNtm": 13.7209,
-      "quarters": 3,
-      "derived": 1,
-      "step": 1.057,
+      "consensusNtm": 13.9403,
+      "quarters": 2,
+      "derived": 2,
+      "step": 1.005,
       "forward": [
-        {
-          "fy": 2026,
-          "q": 3,
-          "reportDate": "2026-10-28",
-          "eps": 3.1095
-        },
         {
           "fy": 2026,
           "q": 4,
@@ -1225,14 +1213,14 @@
       ],
       "approx": true,
       "periods": [
-        "FY2026Q3",
         "FY2026Q4",
         "FY2027Q1",
+        "derived",
         "derived"
       ],
-      "nextReport": "2026-10-28",
+      "nextReport": "2027-02-02",
       "status": "ok",
-      "vsAj": 19.3
+      "vsAj": 21.2
     },
     "XPEV": {
       "ticker": "XPEV",
