@@ -1,6 +1,6 @@
 {
   "date": "2026-10-28",
-  "generatedAt": "2026-10-29T10:56:08.647Z",
+  "generatedAt": "2026-10-29T13:22:40.537Z",
   "maxChanges": 15,
   "changeCount": 7,
   "truncated": false,
@@ -544,6 +544,32 @@
         "baseline": "2026-06-30",
         "change": 0.07070943396226412,
         "impliedPe": 30.5
+      },
+      {
+        "t": "MSFT",
+        "kind": "switch",
+        "from": 16.2,
+        "to": 20.1291,
+        "approx": true,
+        "quarters": 2,
+        "derived": 2,
+        "reportedPeriod": "2026-09-30",
+        "baseline": "2026-06-30",
+        "change": 0.24253703703703716,
+        "impliedPe": 24.5
+      },
+      {
+        "t": "GOOGL",
+        "kind": "switch",
+        "from": 11.5,
+        "to": 13.9403,
+        "approx": true,
+        "quarters": 2,
+        "derived": 2,
+        "reportedPeriod": "2026-09-30",
+        "baseline": "2026-06-30",
+        "change": 0.21220000000000006,
+        "impliedPe": 24.3
       },
       {
         "t": "MU",
