@@ -199,26 +199,26 @@
       "UE"
     ],
     "AMZN": [
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
       "UI",
       "UI",
-      "UE",
-      "UE"
+      "UI",
+      "UI",
+      "UI",
+      "UI",
+      "UI",
+      "UI",
+      "UI",
+      "UI",
+      "UI",
+      "UI",
+      "UI",
+      "UI",
+      "UI",
+      "UI",
+      "UI",
+      "UI",
+      "UI",
+      "UI"
     ],
     "PLTR": [
       "UE",
@@ -485,5 +485,5 @@
       "UI"
     ]
   },
-  "lastUpdated": "2026-10-29T13:22:40.410Z"
+  "lastUpdated": "2026-10-30T01:31:12.329Z"
 }

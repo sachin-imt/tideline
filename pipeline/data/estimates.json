@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-29T13:22:40.232Z",
+  "fetchedAt": "2026-10-30T01:31:12.190Z",
   "source": "finnhub-free",
   "note": "Observational only. apply-estimates.js decides when a name switches off AJ.",
   "coverage": "21/22",
@@ -64,9 +64,14 @@
     "SNDK": {
       "ticker": "SNDK",
       "ajEps": 52,
-      "lastReport": "2026-06-30",
-      "lastActual": 39.25,
+      "lastReport": "2026-09-30",
+      "lastActual": 49.51,
       "history": [
+        {
+          "period": "2026-09-30",
+          "actual": 49.51,
+          "est": 47.1481
+        },
         {
           "period": "2026-06-30",
           "actual": 39.25,
@@ -81,25 +86,14 @@
           "period": "2025-12-31",
           "actual": 6.2,
           "est": 3.5172
-        },
-        {
-          "period": "2025-09-30",
-          "actual": 1.22,
-          "est": 0.9543
         }
       ],
       "symbol": "SNDK",
-      "consensusNtm": 219.2938,
-      "quarters": 3,
-      "derived": 1,
-      "step": 1.093,
+      "consensusNtm": 229.7886,
+      "quarters": 2,
+      "derived": 2,
+      "step": 1.038,
       "forward": [
-        {
-          "fy": 2027,
-          "q": 1,
-          "reportDate": "2026-10-29",
-          "eps": 47.1481
-        },
         {
           "fy": 2027,
           "q": 2,
@@ -115,14 +109,14 @@
       ],
       "approx": true,
       "periods": [
-        "FY2027Q1",
         "FY2027Q2",
         "FY2027Q3",
+        "derived",
         "derived"
       ],
-      "nextReport": "2026-10-29",
+      "nextReport": "2027-01-27",
       "status": "ok",
-      "vsAj": 321.7
+      "vsAj": 341.9
     },
     "LITE": {
       "ticker": "LITE",
@@ -493,9 +487,14 @@
     "AMZN": {
       "ticker": "AMZN",
       "ajEps": 7.8,
-      "lastReport": "2026-06-30",
-      "lastActual": 1.97,
+      "lastReport": "2026-09-30",
+      "lastActual": 1.89,
       "history": [
+        {
+          "period": "2026-09-30",
+          "actual": 1.89,
+          "est": 2.001
+        },
         {
           "period": "2026-06-30",
           "actual": 1.97,
@@ -510,25 +509,14 @@
           "period": "2025-12-31",
           "actual": 1.95,
           "est": 2.011
-        },
-        {
-          "period": "2025-09-30",
-          "actual": 1.95,
-          "est": 1.605
         }
       ],
       "symbol": "AMZN",
-      "consensusNtm": 9.4734,
-      "quarters": 3,
-      "derived": 1,
-      "step": 1.09,
+      "consensusNtm": 9.2783,
+      "quarters": 2,
+      "derived": 2,
+      "step": 0.949,
       "forward": [
-        {
-          "fy": 2026,
-          "q": 3,
-          "reportDate": "2026-10-29",
-          "eps": 2.001
-        },
         {
           "fy": 2026,
           "q": 4,
@@ -544,14 +532,14 @@
       ],
       "approx": true,
       "periods": [
-        "FY2026Q3",
         "FY2026Q4",
         "FY2027Q1",
+        "derived",
         "derived"
       ],
-      "nextReport": "2026-10-29",
+      "nextReport": "2027-02-03",
       "status": "ok",
-      "vsAj": 21.5
+      "vsAj": 19
     },
     "TSM": {
       "ticker": "TSM",
@@ -796,9 +784,14 @@
     "INTC": {
       "ticker": "INTC",
       "ajEps": 3.6,
-      "lastReport": "2026-06-30",
-      "lastActual": 0.42,
+      "lastReport": "2026-09-30",
+      "lastActual": 0.52,
       "history": [
+        {
+          "period": "2026-09-30",
+          "actual": 0.52,
+          "est": 0.3996
+        },
         {
           "period": "2026-06-30",
           "actual": 0.42,
@@ -813,25 +806,14 @@
           "period": "2025-12-31",
           "actual": 0.15,
           "est": 0.0829
-        },
-        {
-          "period": "2025-09-30",
-          "actual": 0.23,
-          "est": 0.01
         }
       ],
       "symbol": "INTC",
-      "consensusNtm": 1.6554,
-      "quarters": 3,
-      "derived": 1,
-      "step": 1.009,
+      "consensusNtm": 1.5727,
+      "quarters": 2,
+      "derived": 2,
+      "step": 0.927,
       "forward": [
-        {
-          "fy": 2026,
-          "q": 3,
-          "reportDate": "2026-10-29",
-          "eps": 0.3996
-        },
         {
           "fy": 2026,
           "q": 4,
@@ -847,14 +829,14 @@
       ],
       "approx": true,
       "periods": [
-        "FY2026Q3",
         "FY2026Q4",
         "FY2027Q1",
+        "derived",
         "derived"
       ],
-      "nextReport": "2026-10-29",
+      "nextReport": "2027-01-20",
       "status": "ok",
-      "vsAj": -54
+      "vsAj": -56.3
     },
     "MRVL": {
       "ticker": "MRVL",
