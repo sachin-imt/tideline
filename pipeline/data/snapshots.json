@@ -1,6 +1,5 @@
 {
   "dates": [
-    "Oct 5",
     "Oct 6",
     "Oct 7",
     "Oct 8",
@@ -19,7 +18,8 @@
     "Oct 27",
     "Oct 28",
     "Oct 29",
-    "Oct 30"
+    "Oct 30",
+    "Nov 2"
   ],
   "snapshots": {
     "MU": [
@@ -123,7 +123,7 @@
       "DI",
       "DI",
       "DI",
-      "DI",
+      "UI",
       "UI",
       "UI",
       "UI",
@@ -221,24 +221,24 @@
       "UI"
     ],
     "PLTR": [
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
       "UE",
       "UE"
     ],
@@ -397,26 +397,26 @@
       "DE"
     ],
     "AAPL": [
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE",
-      "UE"
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE"
     ],
     "GOOGL": [
       "UE",
@@ -436,7 +436,7 @@
       "UE",
       "UE",
       "UE",
-      "UE",
+      "UI",
       "UI",
       "UI"
     ],
@@ -485,5 +485,5 @@
       "UI"
     ]
   },
-  "lastUpdated": "2026-11-02T01:12:34.822Z"
+  "lastUpdated": "2026-11-03T03:16:58.068Z"
 }
