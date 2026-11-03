@@ -1,8 +1,8 @@
 {
-  "fetchedAt": "2026-11-03T03:16:57.894Z",
+  "fetchedAt": "2026-11-03T09:22:02.358Z",
   "source": "finnhub-free",
   "note": "Observational only. apply-estimates.js decides when a name switches off AJ.",
-  "coverage": "21/22",
+  "coverage": "22/22",
   "estimates": {
     "MU": {
       "ticker": "MU",
@@ -1220,7 +1220,46 @@
         }
       ],
       "symbol": "XPEV",
-      "status": "no-forward"
+      "consensusNtm": -2.5978,
+      "quarters": 4,
+      "derived": 0,
+      "step": null,
+      "forward": [
+        {
+          "fy": 2026,
+          "q": 3,
+          "reportDate": "2026-11-16",
+          "eps": -0.9066
+        },
+        {
+          "fy": 2026,
+          "q": 3,
+          "reportDate": "2026-11-24",
+          "eps": -0.9066
+        },
+        {
+          "fy": 2026,
+          "q": 4,
+          "reportDate": "2027-03-18",
+          "eps": -0.2338
+        },
+        {
+          "fy": 2027,
+          "q": 1,
+          "reportDate": "2027-05-26",
+          "eps": -0.5508
+        }
+      ],
+      "approx": false,
+      "periods": [
+        "FY2026Q3",
+        "FY2026Q3",
+        "FY2026Q4",
+        "FY2027Q1"
+      ],
+      "nextReport": "2026-11-16",
+      "status": "ok",
+      "vsAj": null
     },
     "COHR": {
       "ticker": "COHR",
