@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-04T12:12:01.013Z",
+  "fetchedAt": "2026-11-04T14:44:35.095Z",
   "source": "finnhub-free",
   "note": "Observational only. apply-estimates.js decides when a name switches off AJ.",
   "coverage": "21/22",
@@ -367,9 +367,14 @@
     "UBER": {
       "ticker": "UBER",
       "ajEps": 3.69,
-      "lastReport": "2026-06-30",
-      "lastActual": 1.17,
+      "lastReport": "2026-09-30",
+      "lastActual": 0.25,
       "history": [
+        {
+          "period": "2026-09-30",
+          "actual": 0.25,
+          "est": 0.9838
+        },
         {
           "period": "2026-06-30",
           "actual": 1.17,
@@ -384,11 +389,6 @@
           "period": "2025-12-31",
           "actual": 0.14,
           "est": 0.8146
-        },
-        {
-          "period": "2025-09-30",
-          "actual": 3.11,
-          "est": 0.6986
         }
       ],
       "symbol": "UBER",
