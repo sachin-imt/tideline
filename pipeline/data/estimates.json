@@ -1,8 +1,8 @@
 {
-  "fetchedAt": "2026-11-03T14:29:36.993Z",
+  "fetchedAt": "2026-11-04T01:51:12.818Z",
   "source": "finnhub-free",
   "note": "Observational only. apply-estimates.js decides when a name switches off AJ.",
-  "coverage": "22/22",
+  "coverage": "21/22",
   "estimates": {
     "MU": {
       "ticker": "MU",
@@ -658,9 +658,14 @@
     "AMD": {
       "ticker": "AMD",
       "ajEps": 11.82,
-      "lastReport": "2026-06-30",
-      "lastActual": 1.66,
+      "lastReport": "2026-09-30",
+      "lastActual": 2.09,
       "history": [
+        {
+          "period": "2026-09-30",
+          "actual": 2.09,
+          "est": 1.969
+        },
         {
           "period": "2026-06-30",
           "actual": 1.66,
@@ -675,25 +680,14 @@
           "period": "2025-12-31",
           "actual": 1.53,
           "est": 1.3324
-        },
-        {
-          "period": "2025-09-30",
-          "actual": 1.2,
-          "est": 1.175
         }
       ],
       "symbol": "AMD",
-      "consensusNtm": 11.4701,
-      "quarters": 3,
-      "derived": 1,
-      "step": 1.243,
+      "consensusNtm": 13.1219,
+      "quarters": 2,
+      "derived": 2,
+      "step": 1.138,
       "forward": [
-        {
-          "fy": 2026,
-          "q": 3,
-          "reportDate": "2026-11-03",
-          "eps": 1.969
-        },
         {
           "fy": 2026,
           "q": 4,
@@ -709,14 +703,14 @@
       ],
       "approx": true,
       "periods": [
-        "FY2026Q3",
         "FY2026Q4",
         "FY2027Q1",
+        "derived",
         "derived"
       ],
-      "nextReport": "2026-11-03",
+      "nextReport": "2027-02-01",
       "status": "ok",
-      "vsAj": -3
+      "vsAj": 11
     },
     "ASML": {
       "ticker": "ASML",
@@ -1220,46 +1214,7 @@
         }
       ],
       "symbol": "XPEV",
-      "consensusNtm": -2.5978,
-      "quarters": 4,
-      "derived": 0,
-      "step": null,
-      "forward": [
-        {
-          "fy": 2026,
-          "q": 3,
-          "reportDate": "2026-11-16",
-          "eps": -0.9066
-        },
-        {
-          "fy": 2026,
-          "q": 3,
-          "reportDate": "2026-11-24",
-          "eps": -0.9066
-        },
-        {
-          "fy": 2026,
-          "q": 4,
-          "reportDate": "2027-03-18",
-          "eps": -0.2338
-        },
-        {
-          "fy": 2027,
-          "q": 1,
-          "reportDate": "2027-05-26",
-          "eps": -0.5508
-        }
-      ],
-      "approx": false,
-      "periods": [
-        "FY2026Q3",
-        "FY2026Q3",
-        "FY2026Q4",
-        "FY2027Q1"
-      ],
-      "nextReport": "2026-11-16",
-      "status": "ok",
-      "vsAj": null
+      "status": "no-forward"
     },
     "COHR": {
       "ticker": "COHR",
