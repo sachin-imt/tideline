@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-04T14:44:35.095Z",
+  "fetchedAt": "2026-11-05T01:58:50.615Z",
   "source": "finnhub-free",
   "note": "Observational only. apply-estimates.js decides when a name switches off AJ.",
   "coverage": "21/22",
@@ -392,17 +392,11 @@
         }
       ],
       "symbol": "UBER",
-      "consensusNtm": 4.1467,
-      "quarters": 3,
-      "derived": 1,
-      "step": 1.022,
+      "consensusNtm": 4.0104,
+      "quarters": 2,
+      "derived": 2,
+      "step": 0.948,
       "forward": [
-        {
-          "fy": 2026,
-          "q": 3,
-          "reportDate": "2026-11-04",
-          "eps": 0.9838
-        },
         {
           "fy": 2026,
           "q": 4,
@@ -418,14 +412,14 @@
       ],
       "approx": true,
       "periods": [
-        "FY2026Q3",
         "FY2026Q4",
         "FY2027Q1",
+        "derived",
         "derived"
       ],
-      "nextReport": "2026-11-04",
+      "nextReport": "2027-02-02",
       "status": "ok",
-      "vsAj": 12.4
+      "vsAj": 8.7
     },
     "TSLA": {
       "ticker": "TSLA",
@@ -1219,9 +1213,14 @@
     "COHR": {
       "ticker": "COHR",
       "ajEps": 16.38,
-      "lastReport": "2026-06-30",
-      "lastActual": 1.74,
+      "lastReport": "2026-09-30",
+      "lastActual": 2.09,
       "history": [
+        {
+          "period": "2026-09-30",
+          "actual": 2.09,
+          "est": 2.0076
+        },
         {
           "period": "2026-06-30",
           "actual": 1.74,
@@ -1236,25 +1235,14 @@
           "period": "2025-12-31",
           "actual": 1.29,
           "est": 1.2318
-        },
-        {
-          "period": "2025-09-30",
-          "actual": 1.16,
-          "est": 1.0623
         }
       ],
       "symbol": "COHR",
-      "consensusNtm": 9.5872,
-      "quarters": 3,
-      "derived": 1,
+      "consensusNtm": 10.7317,
+      "quarters": 2,
+      "derived": 2,
       "step": 1.119,
       "forward": [
-        {
-          "fy": 2027,
-          "q": 1,
-          "reportDate": "2026-11-04",
-          "eps": 2.0076
-        },
         {
           "fy": 2027,
           "q": 2,
@@ -1270,14 +1258,14 @@
       ],
       "approx": true,
       "periods": [
-        "FY2027Q1",
         "FY2027Q2",
         "FY2027Q3",
+        "derived",
         "derived"
       ],
-      "nextReport": "2026-11-04",
+      "nextReport": "2027-02-02",
       "status": "ok",
-      "vsAj": -41.5
+      "vsAj": -34.5
     }
   }
 }
