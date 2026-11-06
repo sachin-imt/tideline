@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-05T14:49:22.621Z",
+  "fetchedAt": "2026-11-06T01:58:36.874Z",
   "source": "finnhub-free",
   "note": "Observational only. apply-estimates.js decides when a name switches off AJ.",
   "coverage": "21/22",
@@ -146,17 +146,11 @@
         }
       ],
       "symbol": "LITE",
-      "consensusNtm": 22.0932,
-      "quarters": 3,
-      "derived": 1,
-      "step": 1.17,
+      "consensusNtm": 25.2445,
+      "quarters": 2,
+      "derived": 2,
+      "step": 1.14,
       "forward": [
-        {
-          "fy": 2027,
-          "q": 1,
-          "reportDate": "2026-11-05",
-          "eps": 4.2728
-        },
         {
           "fy": 2027,
           "q": 2,
@@ -172,14 +166,14 @@
       ],
       "approx": true,
       "periods": [
-        "FY2027Q1",
         "FY2027Q2",
         "FY2027Q3",
+        "derived",
         "derived"
       ],
-      "nextReport": "2026-11-05",
+      "nextReport": "2027-02-01",
       "status": "ok",
-      "vsAj": -5.1
+      "vsAj": 8.4
     },
     "ORCL": {
       "ticker": "ORCL",
