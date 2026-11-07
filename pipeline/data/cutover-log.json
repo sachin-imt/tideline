@@ -10242,6 +10242,218 @@
           ]
         }
       ]
+    },
+    {
+      "at": "2026-11-07T01:33:12.669Z",
+      "actions": [
+        {
+          "t": "MU",
+          "kind": "switch",
+          "from": 90,
+          "to": 183.2606,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 1.036228888888889,
+          "impliedPe": 5.5,
+          "overridden": [
+            "EPS moves 104% (gate 25%)"
+          ],
+          "viaStandingApproval": true
+        },
+        {
+          "t": "SNDK",
+          "kind": "held",
+          "from": 52,
+          "to": 233.5473,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 3.4912942307692307,
+          "impliedPe": 7.4,
+          "reasons": [
+            "EPS moves 349% (gate 25%)"
+          ]
+        },
+        {
+          "t": "META",
+          "kind": "switch",
+          "from": 30.5,
+          "to": 28.9731,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.05006229508196725,
+          "impliedPe": 21.2
+        },
+        {
+          "t": "UBER",
+          "kind": "switch",
+          "from": 3.69,
+          "to": 4.0104,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.08682926829268288,
+          "impliedPe": 18.2
+        },
+        {
+          "t": "TSLA",
+          "kind": "held",
+          "from": 4.8,
+          "to": 1.6487,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.6565208333333333,
+          "impliedPe": 223.3,
+          "reasons": [
+            "EPS moves 66% (gate 25%)"
+          ]
+        },
+        {
+          "t": "AMZN",
+          "kind": "switch",
+          "from": 7.8,
+          "to": 9.2284,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.18312820512820524,
+          "impliedPe": 27.8
+        },
+        {
+          "t": "TSM",
+          "kind": "retire",
+          "reason": "consensus EPS is TWD against a USD ADR price; retire rather than convert",
+          "reportedPeriod": "2026-09-30"
+        },
+        {
+          "t": "PLTR",
+          "kind": "switch",
+          "from": 2.46,
+          "to": 2.0142,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.18121951219512186,
+          "impliedPe": 84.5
+        },
+        {
+          "t": "AMD",
+          "kind": "switch",
+          "from": 11.82,
+          "to": 13.1219,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.11014382402707275,
+          "impliedPe": 38.5
+        },
+        {
+          "t": "ASML",
+          "kind": "switch",
+          "from": 53,
+          "to": 49.2524,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.07070943396226412,
+          "impliedPe": 30.5
+        },
+        {
+          "t": "INTC",
+          "kind": "held",
+          "from": 3.6,
+          "to": 1.1998,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.6667222222222222,
+          "impliedPe": 87.1,
+          "reasons": [
+            "EPS moves 67% (gate 25%)"
+          ]
+        },
+        {
+          "t": "MSFT",
+          "kind": "held",
+          "from": 16.2,
+          "to": 20.3557,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.2565246913580247,
+          "impliedPe": 24.3,
+          "reasons": [
+            "EPS moves 26% (gate 25%)"
+          ]
+        },
+        {
+          "t": "AAPL",
+          "kind": "switch",
+          "from": 8.8,
+          "to": 8.3894,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.04665909090909096,
+          "impliedPe": 37.7
+        },
+        {
+          "t": "GOOGL",
+          "kind": "switch",
+          "from": 11.5,
+          "to": 14.2845,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.24213043478260865,
+          "impliedPe": 23.7
+        },
+        {
+          "t": "COHR",
+          "kind": "held",
+          "from": 16.38,
+          "to": 10.7317,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.3448290598290598,
+          "impliedPe": 28.1,
+          "reasons": [
+            "EPS moves 34% (gate 25%)"
+          ]
+        }
+      ]
     }
   ]
 }

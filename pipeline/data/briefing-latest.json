@@ -1,6 +1,6 @@
 {
   "date": "2026-11-05",
-  "generatedAt": "2026-11-06T14:27:16.327Z",
+  "generatedAt": "2026-11-07T01:33:12.916Z",
   "maxChanges": 15,
   "changeCount": 15,
   "truncated": true,
@@ -473,14 +473,14 @@
         "t": "UBER",
         "kind": "switch",
         "from": 3.69,
-        "to": 4.1467,
+        "to": 4.0104,
         "approx": true,
-        "quarters": 3,
-        "derived": 1,
+        "quarters": 2,
+        "derived": 2,
         "reportedPeriod": "2026-09-30",
         "baseline": "2026-06-30",
-        "change": 0.12376693766937673,
-        "impliedPe": 17.6
+        "change": 0.08682926829268288,
+        "impliedPe": 18.2
       },
       {
         "t": "AMZN",
@@ -1911,6 +1911,22 @@
         "impliedPe": 24.3,
         "reasons": [
           "EPS moves 26% (gate 25%)"
+        ]
+      },
+      {
+        "t": "COHR",
+        "kind": "held",
+        "from": 16.38,
+        "to": 10.7317,
+        "approx": true,
+        "quarters": 2,
+        "derived": 2,
+        "reportedPeriod": "2026-09-30",
+        "baseline": "2026-06-30",
+        "change": 0.3448290598290598,
+        "impliedPe": 28.1,
+        "reasons": [
+          "EPS moves 34% (gate 25%)"
         ]
       },
       {
