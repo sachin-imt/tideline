@@ -13089,6 +13089,231 @@
           ]
         }
       ]
+    },
+    {
+      "at": "2026-11-11T09:11:43.141Z",
+      "actions": [
+        {
+          "t": "MU",
+          "kind": "switch",
+          "from": 90,
+          "to": 183.2606,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 1.036228888888889,
+          "impliedPe": 5.5,
+          "overridden": [
+            "EPS moves 104% (gate 25%)"
+          ],
+          "viaStandingApproval": true
+        },
+        {
+          "t": "SNDK",
+          "kind": "held",
+          "from": 52,
+          "to": 235.0746,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 3.5206653846153846,
+          "impliedPe": 7.4,
+          "reasons": [
+            "EPS moves 352% (gate 25%)"
+          ]
+        },
+        {
+          "t": "LITE",
+          "kind": "switch",
+          "from": 23.29,
+          "to": 28.5355,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.22522541863460713,
+          "impliedPe": 34.3
+        },
+        {
+          "t": "META",
+          "kind": "switch",
+          "from": 30.5,
+          "to": 28.9731,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.05006229508196725,
+          "impliedPe": 21.2
+        },
+        {
+          "t": "UBER",
+          "kind": "switch",
+          "from": 3.69,
+          "to": 3.9049,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.058238482384823875,
+          "impliedPe": 18.7
+        },
+        {
+          "t": "TSLA",
+          "kind": "held",
+          "from": 4.8,
+          "to": 1.6487,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.6565208333333333,
+          "impliedPe": 223.3,
+          "reasons": [
+            "EPS moves 66% (gate 25%)"
+          ]
+        },
+        {
+          "t": "AMZN",
+          "kind": "switch",
+          "from": 7.8,
+          "to": 9.1959,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.17896153846153848,
+          "impliedPe": 27.9
+        },
+        {
+          "t": "TSM",
+          "kind": "retire",
+          "reason": "consensus EPS is TWD against a USD ADR price; retire rather than convert",
+          "reportedPeriod": "2026-09-30"
+        },
+        {
+          "t": "PLTR",
+          "kind": "switch",
+          "from": 2.46,
+          "to": 2.1145,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.14044715447154468,
+          "impliedPe": 80.5
+        },
+        {
+          "t": "AMD",
+          "kind": "switch",
+          "from": 11.82,
+          "to": 14.2386,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.20461928934010148,
+          "impliedPe": 35.5
+        },
+        {
+          "t": "ASML",
+          "kind": "switch",
+          "from": 53,
+          "to": 50.8775,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.040047169811320796,
+          "impliedPe": 29.6
+        },
+        {
+          "t": "INTC",
+          "kind": "held",
+          "from": 3.6,
+          "to": 1.0837,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.6989722222222222,
+          "impliedPe": 96.4,
+          "reasons": [
+            "EPS moves 70% (gate 25%)"
+          ]
+        },
+        {
+          "t": "MSFT",
+          "kind": "held",
+          "from": 16.2,
+          "to": 20.3697,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.25738888888888906,
+          "impliedPe": 24.2,
+          "reasons": [
+            "EPS moves 26% (gate 25%)"
+          ]
+        },
+        {
+          "t": "AAPL",
+          "kind": "switch",
+          "from": 8.8,
+          "to": 7.9968,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.09127272727272731,
+          "impliedPe": 39.5
+        },
+        {
+          "t": "GOOGL",
+          "kind": "switch",
+          "from": 11.5,
+          "to": 14.1102,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.22697391304347833,
+          "impliedPe": 24
+        },
+        {
+          "t": "COHR",
+          "kind": "held",
+          "from": 16.38,
+          "to": 12.1046,
+          "approx": true,
+          "quarters": 2,
+          "derived": 2,
+          "reportedPeriod": "2026-09-30",
+          "baseline": "2026-06-30",
+          "change": 0.261013431013431,
+          "impliedPe": 24.9,
+          "reasons": [
+            "EPS moves 26% (gate 25%)"
+          ]
+        }
+      ]
     }
   ]
 }
