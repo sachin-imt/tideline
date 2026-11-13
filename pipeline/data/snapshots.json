@@ -1,6 +1,5 @@
 {
   "dates": [
-    "Oct 16",
     "Oct 19",
     "Oct 20",
     "Oct 21",
@@ -19,7 +18,8 @@
     "Nov 9",
     "Nov 10",
     "Nov 11",
-    "Nov 12"
+    "Nov 12",
+    "Nov 13"
   ],
   "snapshots": {
     "MU": [
@@ -114,7 +114,7 @@
       "DI",
       "DI",
       "DI",
-      "DI",
+      "UI",
       "UI",
       "UI",
       "UI",
@@ -221,16 +221,16 @@
       "UI"
     ],
     "PLTR": [
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
+      "DE",
       "UE",
-      "DE",
-      "DE",
-      "DE",
-      "DE",
-      "DE",
-      "DE",
-      "DE",
-      "DE",
-      "DE",
       "UE",
       "UE",
       "UE",
@@ -277,14 +277,14 @@
       "UE",
       "UE",
       "UE",
-      "UE",
       "UI",
       "UI",
       "UI",
       "UI",
       "UE",
       "UE",
-      "UE"
+      "UE",
+      "UI"
     ],
     "INTC": [
       "UI",
@@ -427,7 +427,7 @@
       "UE",
       "UE",
       "UE",
-      "UE",
+      "UI",
       "UI",
       "UI",
       "UI",
@@ -485,5 +485,5 @@
       "UI"
     ]
   },
-  "lastUpdated": "2026-11-13T12:16:52.549Z"
+  "lastUpdated": "2026-11-13T14:45:17.962Z"
 }
