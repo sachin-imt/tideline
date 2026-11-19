@@ -1,6 +1,6 @@
 {
   "date": "2026-11-18",
-  "generatedAt": "2026-11-19T11:31:18.426Z",
+  "generatedAt": "2026-11-19T13:14:53.309Z",
   "maxChanges": 15,
   "changeCount": 4,
   "truncated": false,
@@ -408,6 +408,19 @@
         "baseline": "2026-06-30",
         "change": 0.04858688524590162,
         "impliedPe": 21.1
+      },
+      {
+        "t": "NVDA",
+        "kind": "switch",
+        "from": 16.16,
+        "to": 14.218,
+        "approx": true,
+        "quarters": 2,
+        "derived": 2,
+        "reportedPeriod": "2026-12-31",
+        "baseline": "2026-09-30",
+        "change": 0.12017326732673268,
+        "impliedPe": 15.9
       },
       {
         "t": "UBER",
